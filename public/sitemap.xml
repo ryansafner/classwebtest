@@ -23,20 +23,42 @@
   </url>
   
   <url>
-    <loc>https://classtest.ryansafner.com/categories/</loc>
+    <loc>https://classtest.ryansafner.com/</loc>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://classtest.ryansafner.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://classtest.ryansafner.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://classtest.ryansafner.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/assignments/</loc>
   </url>
   
   <url>
     <loc>https://classtest.ryansafner.com/</loc>
     <lastmod>2016-12-30T21:49:57-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://classtest.ryansafner.com/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -46,27 +68,15 @@
   </url>
   
   <url>
-    <loc>https://classtest.ryansafner.com/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://classtest.ryansafner.com/reference/</loc>
   </url>
   
   <url>
-    <loc>https://classtest.ryansafner.com/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://classtest.ryansafner.com/schedule/</loc>
   </url>
   
   <url>
-    <loc>https://classtest.ryansafner.com/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://classtest.ryansafner.com/tags/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://classtest.ryansafner.com/syllabus/</loc>
   </url>
   
 </urlset>

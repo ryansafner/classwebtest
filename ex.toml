@@ -1,0 +1,81 @@
+baseurl = "https://classtest.ryansafner.com/"
+languageCode = "en-us"
+title = "Econometrics"
+theme = "ath-tufte-hugo_18-19"
+googleAnalytics: ""
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - \.yaml$
+  - _files$
+  - _cache$
+  - \.csl$
+permalinks:
+  post: "/:year/:month/:day/:slug/"
+buildFuture: true
+menu:
+  main:
+    - name: Syllabus
+      url: /syllabus/
+      weight: 1
+    - name: Assignments
+      url: /assignments/
+      weight: 3
+    - name: Schedule
+      url: /schedule/
+      weight: 2
+    - name: Reference
+      url: /reference/
+      weight: 4
+    - name: RStudio.cloud
+      url: "https://rstudio.cloud"
+      weight: 5
+    - name: Slack
+      url: "https://hoodeconometrics.slack.com"
+      weight: 6
+# Disable taxonomies
+taxonomies:
+  tag: ""
+  group: ""
+  category: ""
+params:
+  author: Ryan Safner
+  thumbnail: /images/econ_meta.png
+  instructor: 
+    name: Dr. Ryan Safner
+    email: safner@hood.edu
+    url: "https://www.ryansafner.com"
+    twitter: ryansafner
+    github: ryansafner
+    office: 118 Rosenstock
+  course:
+    number: ECON 480
+    semester: Fall 2019
+    days: "TuTh"
+    time: "2:00–3:15 PM"
+    location: "119 Rosenstock"
+    twitter: ryansafner
+    dates: "January 7–April 17, 2019"
+    github: "ryansafner/classtest"
+    slack: "https://hoodeconometrics.slack.com/"
+    copyrightYear: "2019"
+    contactDetails: >-
+      Office hours: [Sign up here.](https://calendly.com/)<br><br>E-mail is the best way to get in contact with me—I will try to respond to all course-related e-mails within 24 hours (*really*).
+  university: 
+    name: Hood College
+    url: "https://www.hood.edu"
+  school:
+    name: George B. Delaplane, Jr. School of Business
+    url: "https://hood.edu"
+  description: "Understand and use economic reasoning to evaluate public policy"
+  primaryColor: "#5E81AC"
+  secondaryColor: "#D08770"
+  credits: >-
+    Hex icon by Andrew Heiss.<br>[Nord color scheme](https://github.com/arcticicestudio/nord) from [Arctic Ice Studio](http://arcticicestudio.com/).
+  logo:
+    url: /images/econ_meta.png
+    alt: Econometrics
+  meta:
+    twitterSite: "@ryansafner"
+    twitterCreator: "@ryansafner"
+    fbAuthor: "https://www.facebook.com/ryansafner"
