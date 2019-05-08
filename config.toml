@@ -1,7 +1,7 @@
 baseurl = "https://classtest.ryansafner.com/"
 languageCode = "en-us"
 title = "Econometrics"
-theme = "hugo-lithium"
+theme = "ath-tufte-hugo_18-19"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
