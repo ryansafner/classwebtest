@@ -1,6 +1,6 @@
-baseurl = "http://classtest.ryansafner.com/"
+baseurl = "https://classtest.ryansafner.com/"
 languageCode = "en-us"
-title = "A Hugo website"
+title = "Econometrics"
 theme = "hugo-lithium"
 googleAnalytics = ""
 disqusShortname = ""
