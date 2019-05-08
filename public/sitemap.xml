@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://classtest.ryansafner.com/reading/01-reading/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://classtest.ryansafner.com/class/01-class/</loc>
     <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/assignment/01-problem-set/</loc>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,6 +68,12 @@
   </url>
   
   <url>
+    <loc>https://classtest.ryansafner.com/assignment/</loc>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://classtest.ryansafner.com/assignments/</loc>
   </url>
   
@@ -75,6 +91,12 @@
   <url>
     <loc>https://classtest.ryansafner.com/post/</loc>
     <lastmod>2016-12-30T21:49:57-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/reading/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Capitalism I</title>
+      <link>https://classtest.ryansafner.com/reading/01-reading/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/reading/01-reading/</guid>
+      <description>Required   Chapter 1 in Naked EconomicsCharles Wheelan, Naked Economics: Undressing the Dismal Science, 2nd ed. (New York: W. W. Norton &amp;amp; Company, 2010).
+  Introduction and 1.1–1.5 in Economy, Society, and Public PolicyThe CORE Team, Economy, Society, and Public Policy, 2019, https://www.core-econ.org/espp/.
+  Larry Elliott, “Heretics welcome! Economics needs a new Reformation”  “Dismal ignorance of the “dismal science”—a response to Larry Elliot&#34;  Tom Nichols, “How We Killed Expertise (And why we need it back.</description>
+    </item>
+    
+    <item>
       <title>Introduction</title>
       <link>https://classtest.ryansafner.com/class/01-class/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
@@ -19,6 +30,18 @@
       <guid>https://classtest.ryansafner.com/class/01-class/</guid>
       <description> Contents  Slides Pit market   Slides Download the slides from today’s lecture.
    Pit market </description>
+    </item>
+    
+    <item>
+      <title>Problem set 1</title>
+      <link>https://classtest.ryansafner.com/assignment/01-problem-set/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/assignment/01-problem-set/</guid>
+      <description>Submit this as a PDF on Learning Suite. Show your work when possible.
+1 Download one of these datasetsSource: Global Consumption and Income Project. All incomes expressed in 2005 USD PPP.
+ (they’re identical; one is an Excel file, one is a CSV file, which is easier to work with in R):
+  gcip_raw.xlsx  gcip_raw.csv  Choose five countries you are interested in. For each of these countries, calculate the 90/10 ratio for 1980, 1990, 2000, and 2014.</description>
     </item>
     
     <item>
@@ -86,8 +109,8 @@ At the beginning of every class, I will post a quiz on Learning Suite with the f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/schedule/</guid>
-      <description> Here’s your roadmap for the semester!
-  Readings should be completed before each class session  Assignments are due by 11:59 PM on the day they are due  Class materials (slides, in-class activities, etc.) will be added on the day of class     </description>
+      <description>Here’s your roadmap for the semester!
+  Readings should be completed before each class session  Assignments are due by 11:59 PM on the day they are due  Class materials (slides, in-class activities, etc.) will be added on the day of class     Capitalism, markets, and public policy Reading Assignment Class   January 7 (M) Capitalism I      January 9 (W) Capitalism II      January 11 (F) Lab 1      January 14 (M) Social interactions and economic outcomes I      January 16 (W) Social interactions and economic outcomes II      January 18 (F) Lab 2      January 18 (F)  Problem set 1      January 21 (M) No class; Martin Luther King Jr.</description>
     </item>
     
     <item>
