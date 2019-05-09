@@ -31,7 +31,7 @@ menu:
       url: "https://rstudio.cloud"
       weight: 5
     - name: Slack
-      url: "https://ripseecon19.slack.com"
+      url: "https://hoodeconometrics.slack.com"
       weight: 6
 # Disable taxonomies
 taxonomies:
@@ -57,7 +57,7 @@ params:
     twitter: ryansafner
     dates: "January 7–April 17, 2019"
     github: "ryansafner/classtest"
-    slack: "https://ripseecon19.slack.com/"
+    slack: "https://hoodeconometrics.slack.com/"
     copyrightYear: "2019"
     contactDetails: >-
       Office hours: [Sign up here.](https://calendly.com/)<br><br>E-mail is the best way to get in contact with me—I will try to respond to all course-related e-mails within 24 hours (*really*).
