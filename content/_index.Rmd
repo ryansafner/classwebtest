@@ -3,7 +3,7 @@ title: "Econometrics"
 author: "Ryan Safner"
 ---
 
-^[ `r blogdown::shortcode("courseinfo")`] <span class="newthought">This site contains</span> the syllabus, schedule, and assignments for ECON 480: Econometrics, held during Fall 2019 at Hood College.
+^[{-} `r blogdown::shortcode("courseinfo")`] <span class="newthought">This site contains</span> the syllabus, schedule, and assignments for ECON 480: Econometrics, held during Fall 2019 at Hood College.
 
 By the end of this course, you will (1) be literate in fundamental economic principles, (2) understand the limits of economic theory and free markets, (3) justify government and nonprofit intervention in the economy, and (4) make informed policy recommendations by analyzing and evaluating public sector policies.
 
