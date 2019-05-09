@@ -51,15 +51,15 @@ body {
   margin-right: auto;
   padding: 0% 5%;
   /*font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
   background-color: #ffffff;
   color: #000000;
   max-width: 1400px;
   counter-reset: sidenote-counter; }
 
 .wrap strong, .wrap b {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .wrap {
@@ -311,8 +311,8 @@ article .sidenote-number {
   counter-increment: sidenote-counter; }
 article .sidenote-number:after, article .sidenote:before {
   content: counter(sidenote-counter) " ";
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
   color: #A5452B;
   position: relative;
   vertical-align: baseline; }
