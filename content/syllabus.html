@@ -8,48 +8,56 @@ csl: ../static/bib/chicago-syllabus-no-bib.csl
 
 
 
-<p><span class="newthought">The public sector is complex.</span> <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Public administrators, managers, and policy makers need to be fluent in the language of economics and need to be able to engage in and understand quantitative analysis of social policies.</p>
-<p>In this class, you’ll learn how to <em>speak</em> and <em>do</em> economics.</p>
-<div id="course-objectives" class="section level1">
-<h1>Course objectives</h1>
-<p><span class="newthought">By the end of this course,</span> you will (1) be literate in fundamental economic principles, (2) understand the limits of economic theory and free markets, (3) justify government and nonprofit intervention in the economy, and (4) make informed policy recommendations by analyzing and evaluating public sector policies. Specifically, you’ll be able to:</p>
-<ul>
-<li>Understand the principles of microeconomics, public economics, and behavioral economics</li>
-<li>Explain social phenomena using economic vocabulary and reasoning</li>
-<li>Predict how individuals respond to incentives</li>
-<li>Evaluate the costs, benefits, and long-term consequences of public and nonprofit sector policies</li>
-<li>Justify government intervention in the free market and identify when public policies have been unethical or failures</li>
-<li>Propose and argue for public and nonprofit sector policies</li>
-</ul>
+<p><span class="newthought">Econometrics</span><span><label for="sn-1" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="marginnote">
+{{% courseinfo %}}<br />
+<br />
+</span></span> is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.</p>
+<p>I assume you have <em>some</em> working knowledge of economics at the intermediate level and some basic statistical tools.<span><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">The formal prerequisites for this course are <strong>ECON 205</strong> and <strong>ECON 206</strong>; <strong>ECMG 212</strong> or <strong>MATH 112</strong>; and <strong>ECON 305</strong> or <strong>ECON 306</strong><br />
+<br />
+</span></span> We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions.</p>
+<h2 id="course-objectives">Course objectives</h2>
+<p><span class="newthought">By the end of this course,</span> you will:</p>
+<ol style="list-style-type: decimal">
+<li>understand and evaluate statistical and empirical claims;</li>
+<li>understand research design and hypothesis testing;</li>
+<li>gain experience working with, interpreting, and communicating real data.</li>
+</ol>
+<p>I am less concerned with forcing you to memorize and recite proofs of statistical estimator properties, and more concerned with the development of your intuitions and the ability to think critically as an empirical social scientist—although this will require you to demonstrate proficiency with some intermediate statistical and mathematical tools.</p>
 <p>Given these objectives, this course fulfills three of the four learning outcomes for BYU’s <a href="https://marriottschool.byu.edu/mpa/">Master of Public Administration (MPA)</a> program:</p>
 <ul>
 <li><strong>Quantitative Analysis</strong>: BYU MPA graduates are skilled at evaluating programs and policies. They know how to gather data, correctly analyze it, and employ the analysis to recommend policy and programmatic action in public service organizations.</li>
 <li><strong>Public Service Values</strong>: BYU MPA graduates demonstrate an understanding of, passion for, and commitment to public service values, including reverence for the dignity and worth of all people and dedication to ethical governance.</li>
 <li><strong>Communication</strong>: BYU MPA graduates effectively convey verbal and written information with the polish and professionalism appropriate for the public service context. They listen to and promote understanding among people with diverse viewpoints.</li>
 </ul>
-</div>
-<div id="course-materials" class="section level1">
-<h1>Course materials</h1>
+<p><span class="newthought"></span> <strong>Econometrics is hard.</strong> <em>It will be one of the hardest economics courses that you will take, primarily due to the mathematical content.</em> I will do my best to make this class intuitive and helpful, if not interesting. If at any point you find yourself struggling in this course for any reason, please come see me. Do not suffer in silence! Coming to see me for help does not diminish my view of you, in fact I will hold you in <em>higher</em> regard for understanding your own needs and taking charge of your own learning. There are also a some fantastic resources on campus, such as the <a href="http://www.hood.edu/campus-services/academic-services/index.html">Center for Academic Achievement and Retention (CAAR)</a> and the <a href="http://www.hood.edu/library/%7D%7BBeneficial-Hodson%20Library">Beneficial-Hodson Library</a>.</p>
+<h2 id="course-materials">Course materials</h2>
 <p><span class="newthought">Most of the readings in this class are free.</span></p>
-<div id="books" class="section level2">
-<h2>Books</h2>
+<h3 id="books">Books</h3>
 <p>We will only use one physical textbook. There are two official textbooks for the class:</p>
 <ul>
-<li><span class="citation">[@core-espp]</span> <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></li>
-<li><span class="citation">[@Wheelan:2010]</span> <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></li>
+<li><span class="citation">The CORE Team, <em>Economy, Society, and Public Policy</em>, 2019, <a href="https://www.core-econ.org/espp/" role="doc-biblioref">https://www.core-econ.org/espp/</a>.</span><span><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote"><a href="https://www.core-econ.org/espp/"><em>Free!</em></a><br />
+<br />
+</span></span></li>
+<li><span class="citation">Charles Wheelan, <em>Naked Economics: Undressing the Dismal Science</em>, 2nd ed. (New York: W. W. Norton &amp; Company, 2010).</span><span><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">$1.50 used, $11 new at <a href="https://www.amazon.com/Naked-Economics-Undressing-Science-Revised/dp/0393337642/">Amazon</a>; you need the 2010 edition<br />
+<br />
+</span></span></li>
 </ul>
 <p><a href="https://www.core-econ.org/">CORE Econ</a> is a special new project that aims to make economics education accessible to all, replacing textbooks that cost hundreds of dollars with an open source textbook complete with videos and quizzes and other online resources. It’s even been <a href="https://www.economist.com/news/finance-and-economics/21729443-students-are-forced-grapple-real-world-very-beginning-their">lauded by The Economist</a>.</p>
 <p>CORE’s original book, <a href="http://www.core-econ.org/the-economy/"><em>The Economy</em></a>, was designed to serve as a 1–2 semester introduction to economics for economics majors. I used it for this class last year, but it was too complex and we only covered half of the chapters. Recognizing this, CORE recently created a version of their materials <em>specifically</em> for those interested in public administration and policy. <a href="https://www.core-econ.org/espp/"><em>Economy, Society, and Public Policy</em></a> is designed for non-economics majors who have no interest in becoming economists, but who want to understand economics and policy. This is an ideal book for our class and I’m so excited to use it. It’s still a beta project, and there might be errors and quirks and bumps in the road, but (1) it’s free, and (2) it’s state of the art and you’re some of the first students to ever use it. So live with the quirks :)</p>
 <p><a href="http://www.core-econ.org/register/"><strong>Register for a student account at the CORE website.</strong></a></p>
-</div>
-<div id="articles-book-chapters-and-other-materials" class="section level2">
-<h2>Articles, book chapters, and other materials</h2>
+<h3 id="articles-book-chapters-and-other-materials">Articles, book chapters, and other materials</h3>
 <p>There will also occasionally be additional articles and videos to read and watch. When this happens, links to these other resources will be included on the reading page for that week.</p>
-</div>
-<div id="podcasts" class="section level2">
-<h2>Podcasts</h2>
-<p>Finally, you’ll need to listen to at least one economics-related podcast episode every week. We will spend the first few minutes of every class session discussing current events or recent research related to micro, public, or behavioral economics, and podcasts are one of the best ways to do this.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
-<p>Here are some of the best ones—subscribe to 3–4 of these:<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<h3 id="podcasts">Podcasts</h3>
+<p>Finally, you’ll need to listen to at least one economics-related podcast episode every week. We will spend the first few minutes of every class session discussing current events or recent research related to micro, public, or behavioral economics, and podcasts are one of the best ways to do this.<span><label for="sn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="sidenote">You can listen as you commute, wash the dishes, fold your laundry, eat breakfast, or work on homework for other classes!<br />
+<br />
+</span></span></p>
+<p>Here are some of the best ones—subscribe to 3–4 of these:<span><label for="sn-6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="sidenote">You can listen to all these shows on your computer, but it’s best to listen on your smartphone.<br />
+<br />
+On iOS, you can use Apple’s built-in Podcasts app, or download a third-party app like <a href="https://overcast.fm/">Overcast</a> (my personal favorite).<br />
+<br />
+On Android, you can use… something, probably.<br />
+<br />
+</span></span></p>
 <ul>
 <li><a href="https://www.npr.org/podcasts/510289/planet-money">Planet Money</a></li>
 <li><a href="https://www.npr.org/sections/money/567724614/the-indicator">The Indicator</a></li>
@@ -67,47 +75,32 @@ csl: ../static/bib/chicago-syllabus-no-bib.csl
 <li><a href="https://www.npr.org/podcasts/510307/invisibilia">Invisibilia</a></li>
 <li><a href="http://rationallyspeakingpodcast.org/">Rationally Speaking</a></li>
 </ul>
-</div>
-<div id="r-and-rstudio" class="section level2">
-<h2>R and RStudio</h2>
+<h3 id="r-and-rstudio">R and RStudio</h3>
 <p>You will do your problem sets and final project with the open source (and free!) programming language <a href="https://cran.r-project.org/">R</a>. You will use <a href="https://www.rstudio.com/">RStudio</a> as the main program to access R. Think of R as an engine and RStudio as a car dashboard—R handles all the calculations and the actual statistics, while RStudio provides a nice interface for running R code.</p>
 <p>R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free <a href="http://rstudio.cloud/">RStudio.cloud</a> service, which lets you run a full instance of RStudio in your web browser. This means you won’t have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.</p>
 <p>RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets, more complicated analysis, or fancier graphics. Over the course of the semester, you’ll probably want to get around to installing R, RStudio, and other R packages on your computer and wean yourself off of RStudio.cloud.</p>
 <p>You can <a href="/install/">find instructions for installing R, RStudio, and all the tidyverse packages here.</a></p>
 <p>I also highly recommend subscribing to the <a href="https://rweekly.org/">R Weekly newsletter</a>. This e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.</p>
-</div>
-<div id="online-help-and-slack" class="section level2">
-<h2>Online help and Slack</h2>
+<h3 id="online-help-and-slack">Online help and Slack</h3>
 <p>Economics can be difficult. Computer programming can be difficult. Computers are stupid and little errors in your code can cause hours of headache (even if you’ve been doing this stuff for years!).</p>
 <p>Fortunately there are tons of online resources to help you with this. Two of the most important are <a href="https://stackoverflow.com/">StackOverflow</a> (a Q&amp;A site with hundreds of thousands of answers to all sorts of programming questions) and <a href="https://community.rstudio.com/">RStudio Community</a> (a forum specifically designed for people using RStudio and the tidyverse (i.e. you)).</p>
 <p>Searching for help with R on Google can be tricky because the program is, um, a single letter. Try searching for “rstats” instead. If you use Twitter, post R-related questions and content with <a href="https://twitter.com/search?q=%23rstats">#rstats</a>.</p>
 <p>Additionally, we have a class chatroom at <a href="https://ripseecon19.slack.com/">Slack</a> where anyone in the class can ask questions and anyone can answer. Ask questions about the readings or problem sets <a href="https://ripseecon19.slack.com/">in the class Slack workspace</a>. I will monitor Slack regularly, and you should also all do so as well. You’ll likely have similar questions as your peers, and you’ll likely be able to answer other peoples’ questions too.</p>
-</div>
-</div>
-<div id="course-policies" class="section level1">
-<h1>Course policies</h1>
+<h2 id="course-policies">Course policies</h2>
 <p><span class="newthought">Be nice. Be honest. Don’t cheat.</span></p>
 <p>We will also follow the <a href="https://marriottschool.byu.edu/policies/classroom/">full list of Marriott School and BYU classroom policies</a>.</p>
-<div id="counseling-and-psychological-services-caps" class="section level2">
-<h2>Counseling and Psychological Services (CAPS)</h2>
+<h3 id="counseling-and-psychological-services-caps">Counseling and Psychological Services (CAPS)</h3>
 <p>Life at BYU can be complicated and challenging. You might feel overwhelmed, experience anxiety or depression, or struggle with relationships or family responsibilities. <a href="https://caps.byu.edu/">Counseling and Psychological Services (CAPS)</a> provides free, <em>confidential</em> support for students who are struggling with mental health and emotional challenges. The CAPS office is staffed by professional psychologists who are attuned to the needs of all types of college and professional students. Please do not hesitate to contact CAPS for assistance—getting help is a smart and courageous thing to do.</p>
-</div>
-<div id="basic-needs-security" class="section level2">
-<h2>Basic needs security</h2>
+<h3 id="basic-needs-security">Basic needs security</h3>
 <p>If you have difficulty affording groceries or accessing sufficient food to eat every day, or if you lack a safe and stable place to live, and you believe this may affect your performance in this course, please contact the <a href="https://deanofstudents.byu.edu/">Dean of Students</a> for support. Please also consider speaking with your local LDS bishop regarding Church welfare assistance <em>regardless of whether or not you are LDS</em>. Additionally, please talk to me if you are comfortable in doing so. This will enable me to provide any resources that I might possess.</p>
-</div>
-<div id="class-conduct-and-expectations" class="section level2">
-<h2>Class conduct and expectations</h2>
+<h3 id="class-conduct-and-expectations">Class conduct and expectations</h3>
 <p>On the first day of class, we came up with some guidelines for late work and laptop use:</p>
 <ul>
 <li>You each have two late passes that enable you to turn in an assignment up to a week late with no penalty. E-mail me when you want to use one of your late passes.</li>
 <li>Once you are out of late passes (or if you use one and then go beyond the week), you’ll have a 10% late penalty per day, up to 50%.</li>
 <li>Be respectful with your laptop use. You’re adults.</li>
 </ul>
-</div>
-</div>
-<div id="assignments-and-grades" class="section level1">
-<h1>Assignments and grades</h1>
+<h2 id="assignments-and-grades">Assignments and grades</h2>
 <p><span class="newthought">You can find descriptions</span> for all the assignments on the <a href="/assignments/">assignments page</a>.</p>
 <table style="width:64%;">
 <colgroup>
@@ -221,23 +214,8 @@ csl: ../static/bib/chicago-syllabus-no-bib.csl
 </tr>
 </tbody>
 </table>
-</div>
-<div id="red-pandas" class="section level1">
-<h1>Red pandas</h1>
-<p><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> <span class="newthought">Once you have read</span> this entire syllabus and <a href="/assignments/">the assignments page</a>, please <a href="mailto:andrew_heiss@byu.edu">click here</a> and e-mail me a picture of a red panda. For real. Brownie points if it’s animated.</p>
-</div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>{-}
-{{% courseinfo %}}<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p><a href="https://www.core-econ.org/espp/"><em>Free!</em></a><a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>$1.50 used, $11 new at <a href="https://www.amazon.com/Naked-Economics-Undressing-Science-Revised/dp/0393337642/">Amazon</a>; you need the 2010 edition<a href="#fnref3" class="footnote-back">↩</a></p></li>
-<li id="fn4"><p>You can listen as you commute, wash the dishes, fold your laundry, eat breakfast, or work on homework for other classes!<a href="#fnref4" class="footnote-back">↩</a></p></li>
-<li id="fn5"><p>You can listen to all these shows on your computer, but it’s best to listen on your smartphone.</p>
-<p>On iOS, you can use Apple’s built-in Podcasts app, or download a third-party app like <a href="https://overcast.fm/">Overcast</a> (my personal favorite).</p>
-<p>On Android, you can use… something, probably.<a href="#fnref5" class="footnote-back">↩</a></p></li>
-<li id="fn6"><p>{-}
-<img src="https://media.giphy.com/media/r7Nbr97FsXxXG/giphy.gif" alt="Hungry red panda" /><a href="#fnref6" class="footnote-back">↩</a></p></li>
-</ol>
-</div>
+<h2 id="red-pandas">Red pandas</h2>
+<p><span><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="marginnote">
+<img src="https://media.giphy.com/media/r7Nbr97FsXxXG/giphy.gif" alt="Hungry red panda" /><br />
+<br />
+</span></span> <span class="newthought">Once you have read</span> this entire syllabus and <a href="/assignments/">the assignments page</a>, please <a href="mailto:andrew_heiss@byu.edu">click here</a> and e-mail me a picture of a red panda. For real. Brownie points if it’s animated.</p>

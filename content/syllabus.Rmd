@@ -12,9 +12,10 @@ library(tibble)
 library(pander)
 ```
 
-<span class="newthought">The public sector is complex.</span> [^courseinfo] Public administrators, managers, and policy makers need to be fluent in the language of economics and need to be able to engage in and understand quantitative analysis of social policies. 
+<span class="newthought">Econometrics</span> [^courseinfo] is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.
 
-In this class, you'll learn how to *speak* and *do* economics.
+ 
+I assume you have *some* working knowledge of  economics at the intermediate level and some basic statistical tools.^[The formal prerequisites for this course are **ECON 205** and **ECON 206**; **ECMG 212** or **MATH 112**; and **ECON 305** or **ECON 306**] We will do some basic review of some necessary statistics and probability at the beginning until everyone is comfortable, before jumping right into regressions. 
 
 [^courseinfo]: {-}
   `r blogdown::shortcode("courseinfo")`
@@ -22,14 +23,13 @@ In this class, you'll learn how to *speak* and *do* economics.
 
 # Course objectives
 
-<span class="newthought">By the end of this course,</span> you will (1) be literate in fundamental economic principles, (2) understand the limits of economic theory and free markets, (3) justify government and nonprofit intervention in the economy, and (4) make informed policy recommendations by analyzing and evaluating public sector policies. Specifically, you'll be able to:
+<span class="newthought">By the end of this course,</span> you will: 
 
-- Understand the principles of microeconomics, public economics, and behavioral economics
-- Explain social phenomena using economic vocabulary and reasoning
-- Predict how individuals respond to incentives
-- Evaluate the costs, benefits, and long-term consequences of public and nonprofit sector policies
-- Justify government intervention in the free market and identify when public policies have been unethical or failures
-- Propose and argue for public and nonprofit sector policies
+1. understand and evaluate statistical and empirical claims;
+2. understand research design and hypothesis testing;
+3. gain experience working with, interpreting, and communicating real data. 
+
+I am less concerned with forcing you to memorize and recite proofs of statistical estimator properties, and more concerned with the development of your intuitions and the ability to think critically as an empirical social scientist---although this will require you to demonstrate proficiency with some intermediate statistical and mathematical tools. 
 
 Given these objectives, this course fulfills three of the four learning outcomes for BYU's [Master of Public Administration (MPA)](https://marriottschool.byu.edu/mpa/) program:
 
@@ -37,6 +37,7 @@ Given these objectives, this course fulfills three of the four learning outcomes
 - **Public Service Values**: BYU MPA graduates demonstrate an understanding of, passion for, and commitment to public service values, including reverence for the dignity and worth of all people and dedication to ethical governance.
 - **Communication**: BYU MPA graduates effectively convey verbal and written information with the polish and professionalism appropriate for the public service context. They listen to and promote understanding among people with diverse viewpoints.
 
+<span class="newthought">\textbf{Fair warning:}</span> **Econometrics is hard.** *It will be one of the hardest economics courses that you will take, primarily due to the mathematical content.* I will do my best to make this class intuitive and helpful, if not interesting. If at any point you find yourself struggling in this course for any reason, please come see me. Do not suffer in silence! Coming to see me for help does not diminish my view of you, in fact I will hold you in *higher* regard for understanding your own needs and taking charge of your own learning. There are also a some fantastic resources on campus, such as the [Center for Academic Achievement and Retention (CAAR)](http://www.hood.edu/campus-services/academic-services/index.html) and the [Beneficial-Hodson Library](http://www.hood.edu/library/}{Beneficial-Hodson Library). 
 
 # Course materials
 

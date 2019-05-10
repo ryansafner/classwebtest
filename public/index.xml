@@ -89,9 +89,10 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/assignments/</guid>
-      <description>Preparation You will get the most out of this class if you (1) attend class, (2) complete all the readings, and (3) engage1 with the readings.2
-To encourage attendance and preparation, I’m borrowing and adapting Dr. Thompson’s system from his OB class that you just finished: regular self-reporting backed by the honor system.
-At the beginning of every class, I will post a quiz on Learning Suite with the following questions:</description>
+      <description>Preparation You will get the most out of this class if you (1) attend class, (2) complete all the readings, and (3) engageTake detailed notes, watch the videos and supplementary content, work through the examples given in the textbook, have vivid dreams about them, etc.
+ with the readings.Also (4) ask for help from me or the TAs!
+
+To encourage attendance and preparation, I’m borrowing and adapting Dr. Thompson’s system from his OB class that you just finished: regular self-reporting backed by the honor system.</description>
     </item>
     
     <item>
@@ -100,7 +101,7 @@ At the beginning of every class, I will post a quiz on Learning Suite with the f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/reference/</guid>
-      <description>Contents  Citations and bibliography Things you should know for Exam 1 Capitalism Social interactions, economic outcomes, behavioral economics, and incentives Public policy for fairness and efficiency Work, wellbeing, and scarcity Institutions, power, and inequality  Things you should know for Exam 2 The firm Firms and markets Macroeconomics  Things you should know for Exam 3 Institutions and public goods problems    Citations and bibliography 1 You can download a BibTeX file of all the non-web-based readings in the course.</description>
+      <description>a.sourceLine { display: inline-block; line-height: 1.25; } a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; } a.sourceLine:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } a.sourceLine { text-indent: -1em; padding-left: 1em; } } pre.</description>
     </item>
     
     <item>
@@ -119,9 +120,20 @@ At the beginning of every class, I will post a quiz on Learning Suite with the f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/syllabus/</guid>
-      <description>The public sector is complex. 1 Public administrators, managers, and policy makers need to be fluent in the language of economics and need to be able to engage in and understand quantitative analysis of social policies.
-In this class, you’ll learn how to speak and do economics.
-Course objectives By the end of this course, you will (1) be literate in fundamental economic principles, (2) understand the limits of economic theory and free markets, (3) justify government and nonprofit intervention in the economy, and (4) make informed policy recommendations by analyzing and evaluating public sector policies.</description>
+      <description>Econometrics&amp;#8853;Instructor
+Dr. Ryan Safner
+ 118 Rosenstock
+safner@hood.edu
+@ryansafner
+ Office hours: Sign up here.
+E-mail is the best way to get in contact with me—I will try to respond to all course-related e-mails within 24 hours (really).
+Course
+ TuTh
+ January 7–April 17, 2019
+ 2:00–3:15 PM
+ 119 Rosenstock
+ Slack
+ is the application of statistical tools to quantify and measure economic relationships in the real world.</description>
     </item>
     
   </channel>
