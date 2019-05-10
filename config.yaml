@@ -71,9 +71,9 @@ params:
   primaryColor: "#5E81AC"
   secondaryColor: "#D08770"
   credits: >-
-    Hex icon by Andrew Heiss.<br>[Nord color scheme](https://github.com/arcticicestudio/nord) from [Arctic Ice Studio](http://arcticicestudio.com/).
+    Hex icon by Ryan Safner via [https://github.com/GuangchuangYu/hexSticker](hexSticker).<br> Course website based on [https://econw19.classes.andrewheiss.com/](Andrew Heiss). <br>[Nord color scheme](https://github.com/arcticicestudio/nord) from [Arctic Ice Studio](http://arcticicestudio.com/).
   logo:
-    url: /images/econ_meta.png
+    url: /images/hoodmetrics.png
     alt: Econometrics
   meta:
     twitterSite: "@ryansafner"
