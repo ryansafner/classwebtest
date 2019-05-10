@@ -23,6 +23,7 @@ This is heavily borrowed from the beautiful course websites of [Andrew Heiss](ht
 - `data` folder contains 
     - `lessons.yml`: a key file that populates a table of class meetings on the `schedule` page. Links class meetings (rows of table) icons to individual assignment pages, class pages, and reading pages for each meeting
 - `static` folder used for hosting files (e.g. datasets, handouts, images, etc)
+    - `bib/references.bib` is where the references for citations (e.g. on syllabus, readings, etc) are stored
 - `public` used for Netlify serving
 - other folders that are necessary, but should not be modified:
     - `pandoc` stores templates needed for pages
