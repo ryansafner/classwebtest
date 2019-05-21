@@ -45,11 +45,11 @@ Given these objectives, this course fulfills three of the four learning outcomes
 
 ## Books
 
-The following book is **required**^[Actually, I **strongly recommend** it. You are not *obligated* to buy it, in the sense that you will still have access to the data and homework without possessing the book. But this is a course where you really will want to understand the derivations or get additional context beyond just my slides...] and will be available from the campus bookstore.
+The following book is **required**^[You are not *obligated* to buy it, I just **strongly recommend** it in the sense that you will still have access to all data and assignments without possessing the book. But this is a course where you really will want to understand the derivations or get additional context beyond just my slides...] and will be available from the campus bookstore.
 
-- [@Bailey]
+- [@Bailey], 2^nd^ ed. ISBN: 978-0190857462
 
-You are welcome to purchase the book by other means (e.g. Amazon, half.com, etc). I have no financial stake in requiring you to purchase this book. You are welcome to use previous version of the book, but carefully verify the reading assignments, as the material may be different across versions. 
+You are welcome to purchase the book by other means (e.g. [Amazon](https://www.amazon.com/Real-Econometrics-Answer-Important-Questions/dp/0190857463/ref=dp_ob_title_bk), half.com, etc). I have no financial stake in requiring you to purchase this book. The (cheaper) 1st edition is sufficient, but makes significantly less use of `R` (in favor of `STATA`). 
 
 ## Software 
 
@@ -88,13 +88,12 @@ Life at BYU can be complicated and challenging. You might feel overwhelmed, expe
 
 ```{r assignments-grades, include=FALSE}
 assignments <- tribble(
-  ~Num,  ~Assignment, ~Percent,
-  1     , "Research Project", 30,
-  n  , "Problem sets (Average)", 25,
-  1      , "Midterm", 20,
-  1     , "Final", 25
-) %>%
-  mutate(Percent = scales::percent(Percent))
+  ~"",  ~Assignment, ~Percent,
+  1     , "Research Project", "30%",
+  "n"  , "Problem sets (Average)", "25%",
+  1      , "Midterm", "20%",
+  1     , "Final", "25%"
+)
 
 grading <- tribble(
   ~Grade, ~Range, ~Grade1, ~Range1,

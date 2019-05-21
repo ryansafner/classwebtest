@@ -15,6 +15,9 @@ library(here)
 source(here("lib", "graphics.R"))
 ```
 
+# Installing R and R Studio
+
+
 
 # Citations and bibliography
 
