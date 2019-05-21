@@ -55,7 +55,8 @@ params:
     time: "2:00–3:15 PM"
     location: "119 Rosenstock"
     twitter: ryansafner
-    dates: "[August 26–December 10, 2019](https://www.hood.edu/offices-services/registrars-office/academic-calendar/2019-20-academic-calendar)"
+    dates: >-
+      August 26–December 10, 2019
     github: "ryansafner/classtest"
     slack: "https://hoodeconometrics.slack.com/"
     copyrightYear: "2019"
