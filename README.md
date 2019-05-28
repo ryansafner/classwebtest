@@ -50,3 +50,10 @@ This is heavily borrowed from the beautiful course websites of [Andrew Heiss](ht
 ```
 
 2. On `lessons.yaml`, add each individual element for each class as needed, e.g. `slides: "01-slides"`
+
+# Hosting Xaringan Slides and Adding to Schedule Page
+
+- Following [Tim Mastny's Blog Post](https://timmastny.rbind.io/blog/embed-slides-knitr-blogdown/), create a `slides` folder under `static` folder
+- Place all Xaringan files in that folder (e.g custom css files)
+- Knit the Xaringan `.Rmd` files to produce an html file (output) pulling css and other libs from this folder
+- Based on my Schedule page (see adding sections to schedule section), I have a link going to `/slides/` in the static folder for each class
