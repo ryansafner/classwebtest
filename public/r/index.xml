@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rs on Econometrics</title>
+    <link>https://classtest.ryansafner.com/r/</link>
+    <description>Recent content in Rs on Econometrics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://classtest.ryansafner.com/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://classtest.ryansafner.com/r/01-r/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/r/01-r/</guid>
+      <description> Contents  Slides Pit market   Slides Download the slides from today’s lecture.
+   Pit market </description>
+    </item>
+    
+  </channel>
+</rss>

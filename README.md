@@ -36,11 +36,11 @@ This is heavily borrowed from the beautiful course websites of [Andrew Heiss](ht
 
 # Adding Sections to Schedule
 
-1. Adding a new column (assignment type) to the table schedule page, such as **slides**, go to `schedule.html` in (`themes/ath-tufte-hugo_18-19/layouts/shortcodes/) and add the following code (examplified with **slides**)
+1. Adding a new column (assignment type) to the table schedule page, such as **thing**, go to `schedule.html` in (`themes/ath-tufte-hugo_18-19/layouts/shortcodes/) and add the following code (examplified with **thing**)
 
 ```
-            {{- if .slides }}
-            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/slides/{{ .slides }}/">
+            {{- if .thing }}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/thing/{{ .thing }}/">
                 <i class="fas fa-university fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
@@ -49,7 +49,9 @@ This is heavily borrowed from the beautiful course websites of [Andrew Heiss](ht
 
 ```
 
-2. On `lessons.yaml`, add each individual element for each class as needed, e.g. `slides: "01-slides"`
+2. On `lessons.yaml`, add each individual element for each class as needed, e.g. `thing: "01-thing"`
+3. Place individual `01-thing.Rmd` files into a `thing` folder under `content` to be linked to
+    - The one exception is for Xaringan slides, which need to go under `static` to render properly, see below 
 
 # Hosting Xaringan Slides and Adding to Schedule Page
 

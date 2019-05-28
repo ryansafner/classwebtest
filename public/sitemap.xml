@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://classtest.ryansafner.com/r/01-r/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://classtest.ryansafner.com/assignment/01-problem-set/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
   </url>
@@ -68,10 +73,6 @@
   </url>
   
   <url>
-    <loc>https://classtest.ryansafner.com/slides/01-slides/</loc>
-  </url>
-  
-  <url>
     <loc>https://classtest.ryansafner.com/assignment/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -109,12 +110,13 @@
   </url>
   
   <url>
-    <loc>https://classtest.ryansafner.com/schedule/</loc>
+    <loc>https://classtest.ryansafner.com/r/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://classtest.ryansafner.com/slides/</loc>
-    <priority>0</priority>
+    <loc>https://classtest.ryansafner.com/schedule/</loc>
   </url>
   
   <url>
