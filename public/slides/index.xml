@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides on Econometrics</title>
+    <link>https://classtest.ryansafner.com/slides/</link>
+    <description>Recent content in Slides on Econometrics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://classtest.ryansafner.com/slides/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lecture 1: Introduction to Econometrics</title>
+      <link>https://classtest.ryansafner.com/slides/01-slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/slides/01-slides/</guid>
+      <description>class: inverse, center, middle
+What is Econometrics?  Why Everyone, Yes Everyone, Should Learn Statistics .center[.image-40[]]
+ Why Everyone, Yes Everyone, Should Learn Statistics .center[.image-30[]]
+ We’re Not so Good at Statistics  Votes in the U.S. House of Representatives in favor of passing the Civil Rights Act of 1964:    Democrat Republican    61% 80%    –
+ Simple enough: “on average, Republicans tended to vote for passage more than Democrats”   We’re Not so Good at Statistics  Broken down further by Northern vs.</description>
+    </item>
+    
+  </channel>
+</rss>
