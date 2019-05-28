@@ -84,6 +84,15 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
+      <title></title>
+      <link>https://classtest.ryansafner.com/slides/01-slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/slides/01-slides/</guid>
+      <description>Lecture 1: Introduction to Econometrics   class: center, middle, inverse, title-slide # Lecture 1: Introduction to Econometrics ## ECON 480 - Econometrics - Fall 2018 ### Ryan Safner ### August 27, 2018 --- class: inverse, center, middle # What is Econometrics? --- # Why Everyone, Yes *Everyone*, Should Learn Statistics .center[.image-40[![\href{https://www.smbc-comics.com/comic/why-i-couldn39t-be-a-math-teacher}{SMBC}](https://www.dropbox.com/s/xd47zns2riqtwzz/smbcmathteacher.png?raw=1)]] --- # Why Everyone, Yes *Everyone*, Should Learn Statistics .center[.image-30[![\href{https://www.smbc-comics.com/comic/2010-12-01}{SMBC}](https://www.dropbox.com/s/114jbjtdakritv0/smbc2080stats.png?raw=1)]] --- # We&#39;re Not so Good at Statistics - Votes in the U.</description>
+    </item>
+    
+    <item>
       <title>Assignments</title>
       <link>https://classtest.ryansafner.com/assignments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -93,19 +102,6 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
  with the readings.Also (4) ask for help from me or the TAs!
 
 To encourage attendance and preparation, I’m borrowing and adapting Dr. Thompson’s system from his OB class that you just finished: regular self-reporting backed by the honor system.</description>
-    </item>
-    
-    <item>
-      <title>Lecture 1: Introduction to Econometrics</title>
-      <link>https://classtest.ryansafner.com/slides/01-slides/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://classtest.ryansafner.com/slides/01-slides/</guid>
-      <description>class: inverse, center, middle
-What is Econometrics?  Why Everyone, Yes Everyone, Should Learn Statistics .center[.image-40[]]
- Why Everyone, Yes Everyone, Should Learn Statistics .center[.image-30[]]
- We’re Not so Good at Statistics  Votes in the U.S. House of Representatives in favor of passing the Civil Rights Act of 1964:    Democrat Republican    61% 80%    –
- Simple enough: “on average, Republicans tended to vote for passage more than Democrats”   We’re Not so Good at Statistics  Broken down further by Northern vs.</description>
     </item>
     
     <item>
