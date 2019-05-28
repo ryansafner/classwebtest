@@ -33,3 +33,20 @@ This is heavily borrowed from the beautiful course websites of [Andrew Heiss](ht
 
 - Changing navbar items: edit in `config.yaml` (main directory)
 -
+
+# Adding Sections to Schedule
+
+1. Adding a new column (assignment type) to the table schedule page, such as **slides**, go to `schedule.html` in (`themes/ath-tufte-hugo_18-19/layouts/shortcodes/) and add the following code (examplified with **slides**)
+
+```
+            {{- if .slides }}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/slides/{{ .slides }}/">
+                <i class="fas fa-university fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
+                <i class="fas fa-university fa-lg"></i></font></td>
+            {{- end }}
+
+```
+
+2. On `lessons.yaml`, add each individual element for each class as needed, e.g. `slides: "01-slides"`

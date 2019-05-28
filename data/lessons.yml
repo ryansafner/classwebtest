@@ -5,6 +5,7 @@ lessons:
   - title: "Introduction to Econometrics"
     date: "August 27 (Tu)"
     class: "01-class"
+    slides: "01-slides"
 
   - title: "The Quest for Causality"
     date: "August 29 (Th)"
