@@ -1,512 +1,307 @@
----
-title: "Lecture 1: Introduction to Econometrics"
-subtitle: "ECON 480 - Econometrics - Fall 2018"
-author: "Ryan Safner"
-date: "August 27, 2018"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    #seal: false
-    css: [default, custom.css, default-fonts, "hygge"] #, metropolis, metropolis-fonts
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: "16:9"
-      slideNumberFormat: |
-        <div class="progress-bar-container">
-          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
-          </div>
-        </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture 1: Introduction to Econometrics</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Ryan Safner" />
+    <meta name="date" content="2018-08-27" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Lecture 1: Introduction to Econometrics
+## ECON 480 - Econometrics - Fall 2018
+### Ryan Safner
+### August 27, 2018
 
 ---
 
 
 
-<p>class: inverse, center, middle</p>
-<div id="what-is-econometrics" class="section level1">
-<h1>What is Econometrics?</h1>
-<hr />
-</div>
-<div id="why-everyone-yes-everyone-should-learn-statistics" class="section level1">
-<h1>Why Everyone, Yes <em>Everyone</em>, Should Learn Statistics</h1>
-<p>.center[.image-40[<img src="https://www.dropbox.com/s/xd47zns2riqtwzz/smbcmathteacher.png?raw=1" alt="" />]]</p>
-<hr />
-</div>
-<div id="why-everyone-yes-everyone-should-learn-statistics-1" class="section level1">
-<h1>Why Everyone, Yes <em>Everyone</em>, Should Learn Statistics</h1>
-<p>.center[.image-30[<img src="https://www.dropbox.com/s/114jbjtdakritv0/smbc2080stats.png?raw=1" alt="" />]]</p>
-<hr />
-</div>
-<div id="were-not-so-good-at-statistics" class="section level1">
-<h1>We’re Not so Good at Statistics</h1>
-<ul>
-<li>Votes in the U.S. House of Representatives in favor of passing the Civil Rights Act of 1964:</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th>Democrat</th>
-<th>Republican</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>61%</td>
-<td>80%</td>
-</tr>
-</tbody>
-</table>
-<p>–</p>
-<ul>
-<li>Simple enough: “on average, Republicans tended to vote for passage more than Democrats”</li>
-</ul>
-<hr />
-</div>
-<div id="were-not-so-good-at-statistics-1" class="section level1">
-<h1>We’re Not so Good at Statistics</h1>
-<ul>
-<li>Broken down further by Northern vs. Southern states:</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th>Democrat</th>
-<th>Republican</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>North</strong></td>
-<td>94%</td>
-<td>85%</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>(145/154)</td>
-<td>(138/162)</td>
-</tr>
-<tr class="odd">
-<td><strong>South</strong></td>
-<td>7%</td>
-<td>0%</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>(7/94)</td>
-<td>(0/10)</td>
-</tr>
-<tr class="odd">
-<td><strong>Overall</strong></td>
-<td>61%</td>
-<td>80%</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>(152/248)</td>
-<td>(138/172)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>What’s going on?</li>
-</ul>
-<p>–</p>
-<ul>
-<li>A far greater proportion of Democrats (94/248, 38%) than Republicans (10/172, 6%) were from the South</li>
-</ul>
-<p>–</p>
-<ul>
-<li>The 7% of southern Democrats voting <em>for</em> the Act dragged down the Democrats’ <em>overall</em> percentage more than the 0% of southern Republicans</li>
-</ul>
-<hr />
-</div>
-<div id="simpsons-paradox" class="section level1">
-<h1>Simpson’s Paradox</h1>
-<p>.content-box-red[</p>
-<p>.red[<strong>Simpson’s Paradox</strong>:] The correlation between two variables can change (even reverse!) when additional variables are considered]</p>
-<p>.center[<img src="https://www.dropbox.com/s/0dxltnoenxmljlr/homerdoh.jpg?raw=1" />]</p>
-<hr />
-</div>
-<div id="simpsons-paradox-1" class="section level1">
-<h1>Simpson’s Paradox</h1>
-<p>.pull-left[
-.content-box-red[</p>
-<p>.red[<strong>Simpson’s Paradox</strong>:] The correlation between two variables can change (even reverse!) when additional variables are considered]</p>
-<p>]
+
+class: inverse, center, middle
+
+# What is Econometrics?
+
+---
+
+# Why Everyone, Yes *Everyone*, Should Learn Statistics
+
+.center[.image-40[![\href{https://www.smbc-comics.com/comic/why-i-couldn39t-be-a-math-teacher}{SMBC}](https://www.dropbox.com/s/xd47zns2riqtwzz/smbcmathteacher.png?raw=1)]]
+
+---
+
+# Why Everyone, Yes *Everyone*, Should Learn Statistics
+
+.center[.image-30[![\href{https://www.smbc-comics.com/comic/2010-12-01}{SMBC}](https://www.dropbox.com/s/114jbjtdakritv0/smbc2080stats.png?raw=1)]]
+
+---
+
+# We're Not so Good at Statistics
+
+- Votes in the U.S. House of Representatives in favor of passing the Civil Rights Act of 1964:
+
+| Democrat | Republican |
+|----------|------------|
+| 61%      | 80%        | 
+
+--
+
+- Simple enough: "on average, Republicans tended to vote for passage more than Democrats"
+
+---
+
+# We're Not so Good at Statistics
+
+- Broken down further by Northern vs. Southern states:
+
+|       |Democrat  | Republican |
+|-------|----------|------------|
+| **North** | 94%      | 85%       | 
+|           | (145/154)| (138/162) |
+| **South** | 7%       | 0%        |
+|           | (7/94)   | (0/10)    |
+| **Overall** | 61%    | 80%       |
+|             | (152/248) | (138/172) |
+
+- What's going on?
+
+--
+
+- A far greater proportion of Democrats (94/248, 38%) than Republicans (10/172, 6%) were from the South
+
+--
+
+- The 7% of southern Democrats voting *for* the Act dragged down the Democrats' *overall* percentage more than the 0% of southern Republicans
+
+---
+
+# Simpson's Paradox
+
+.content-box-red[
+
+.red[**Simpson's Paradox**:] The correlation between two variables can change (even reverse!) when additional variables are considered]
+
+.center[![](https://www.dropbox.com/s/0dxltnoenxmljlr/homerdoh.jpg?raw=1)]
+
+---
+
+# Simpson's Paradox
+
+.pull-left[
+.content-box-red[
+
+.red[**Simpson's Paradox**:] The correlation between two variables can change (even reverse!) when additional variables are considered]
+
+]
 .pull-right[
-.center[<img src="https://www.dropbox.com/s/0dxltnoenxmljlr/homerdoh.jpg?raw=1" />]]</p>
-<hr />
-<p>class: inverse, center, middle</p>
-</div>
-<div id="economic-theory" class="section level1">
-<h1>Economic Theory</h1>
-<hr />
-</div>
-<div id="economic-theory-and-economic-models" class="section level1">
-<h1>Economic Theory and Economic Models</h1>
-<ul>
-<li>Economic theorizing often involves building a .content-box-green[formal model] to relate economic phenomena and build intuitions</li>
-</ul>
-<p>–</p>
-<p>.content-box-green[
-.green[<strong>Example</strong>]:</p>
-<p>Becker (1968) famously models crime as a rational choice:
-<span class="math display">\[y = f(x_1,x_2,x_3,x_4,x_5,x_6,x_7)\]</span></p>
-<table>
-<thead>
-<tr class="header">
-<th>Thing</th>
-<th>Thing 2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(x_1\)</span></td>
-<td>Hours spent on criminal activities</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(x_2\)</span></td>
-<td>Hourly wages for legal employment</td>
-</tr>
-</tbody>
-</table>
-<p>]</p>
-<ul>
-<li>We can at least predict the “sign” of each relationship between <span class="math inline">\(y\)</span> and each <span class="math inline">\(x_i\)</span> (then estimate the quantitative impact)</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th>Thing</th>
-<th>Thing 2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(x_1\)</span></td>
-<td>Hours spent on criminal activities</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(x_2\)</span></td>
-<td>Hourly wages for legal employment</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p>class: blank
-background-image: url(<a href="https://www.dropbox.com/s/dg69zmfgg020onj/bitcoinpriceapril2019.png?raw=1" class="uri">https://www.dropbox.com/s/dg69zmfgg020onj/bitcoinpriceapril2019.png?raw=1</a>)
-background-position: 50% 50%</p>
-<hr />
-</div>
-<div id="example-code" class="section level1">
-<h1>Example Code</h1>
-<p>.pull-left[</p>
-<pre class="r"><code>ggplot(data = gapminder, aes(x = gdpPercap, 
-    y = lifeExp, color = continent, fill= continent))+
-    geom_point()+geom_smooth(method = &quot;lm&quot;) +
-    {{scale_x_log10()+ylab(&quot;Life Expectancy (Years)&quot;)+
-    xlab(&quot;Log GDP/Capita&quot;)}}</code></pre>
-<p>]</p>
-<p>.pull-right[
-<img src="/slides/01-slides_files/figure-html/gapminderp-1.png" width="672" />]</p>
-<hr />
-<p>class: inverse, center, middle</p>
-</div>
-<div id="about-this-class" class="section level1">
-<h1>About this Class</h1>
-<hr />
-</div>
-<div id="this-class-is" class="section level1">
-<h1>This Class Is</h1>
-<p><img src="/slides/01-slides_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<hr />
-</div>
-<div id="this-class-is-1" class="section level1">
-<h1>This Class Is</h1>
-<p><img src="/slides/01-slides_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<hr />
-</div>
-<div id="example" class="section level1">
-<h1>Example</h1>
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-mpg
-</th>
-<th style="text-align:right;">
-cyl
-</th>
-<th style="text-align:right;">
-disp
-</th>
-<th style="text-align:right;">
-hp
-</th>
-<th style="text-align:right;">
-drat
-</th>
-<th style="text-align:right;">
-wt
-</th>
-<th style="text-align:right;">
-qsec
-</th>
-<th style="text-align:right;">
-vs
-</th>
-<th style="text-align:right;">
-am
-</th>
-<th style="text-align:right;">
-gear
-</th>
-<th style="text-align:right;">
-carb
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-Mazda RX4
-</td>
-<td style="text-align:right;">
-21.0
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-160
-</td>
-<td style="text-align:right;">
-110
-</td>
-<td style="text-align:right;">
-3.90
-</td>
-<td style="text-align:right;">
-2.620
-</td>
-<td style="text-align:right;">
-16.46
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-4
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Mazda RX4 Wag
-</td>
-<td style="text-align:right;">
-21.0
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-160
-</td>
-<td style="text-align:right;">
-110
-</td>
-<td style="text-align:right;">
-3.90
-</td>
-<td style="text-align:right;">
-2.875
-</td>
-<td style="text-align:right;">
-17.02
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-4
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Datsun 710
-</td>
-<td style="text-align:right;">
-22.8
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-108
-</td>
-<td style="text-align:right;">
-93
-</td>
-<td style="text-align:right;">
-3.85
-</td>
-<td style="text-align:right;">
-2.320
-</td>
-<td style="text-align:right;">
-18.61
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Hornet 4 Drive
-</td>
-<td style="text-align:right;">
-21.4
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-258
-</td>
-<td style="text-align:right;">
-110
-</td>
-<td style="text-align:right;">
-3.08
-</td>
-<td style="text-align:right;">
-3.215
-</td>
-<td style="text-align:right;">
-19.44
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Hornet Sportabout
-</td>
-<td style="text-align:right;">
-18.7
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-360
-</td>
-<td style="text-align:right;">
-175
-</td>
-<td style="text-align:right;">
-3.15
-</td>
-<td style="text-align:right;">
-3.440
-</td>
-<td style="text-align:right;">
-17.02
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Valiant
-</td>
-<td style="text-align:right;">
-18.1
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-225
-</td>
-<td style="text-align:right;">
-105
-</td>
-<td style="text-align:right;">
-2.76
-</td>
-<td style="text-align:right;">
-3.460
-</td>
-<td style="text-align:right;">
-20.22
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-</tbody>
-</table>
-<hr />
-</div>
-<div id="example-ii" class="section level1">
-<h1>Example II</h1>
-<p>.pull-left[</p>
-<pre><code>## 
+.center[![](https://www.dropbox.com/s/0dxltnoenxmljlr/homerdoh.jpg?raw=1)]
+]
+
+---
+
+class: inverse, center, middle
+
+# Economic Theory
+
+---
+
+# Economic Theory and Economic Models
+
+- Economic theorizing often involves building a .content-box-green[formal model] to relate economic phenomena and build intuitions	
+
+--
+
+.content-box-green[
+.green[**Example**]:
+
+Becker (1968) famously models crime as a rational choice: 
+`$$y = f(x_1,x_2,x_3,x_4,x_5,x_6,x_7)$$`
+
+| Thing | Thing 2 |
+|-------|------------------------------------|
+| `\(x_1\)` | Hours spent on criminal activities |
+| `\(x_2\)` | Hourly wages for legal employment |
+
+]
+
+- We can at least predict the "sign" of each relationship between `\(y\)` and each `\(x_i\)` (then estimate the quantitative impact)
+
+
+| Thing | Thing 2 |
+|-------|------------------------------------|
+| `\(x_1\)` | Hours spent on criminal activities |
+| `\(x_2\)` | Hourly wages for legal employment |
+
+---
+
+class: blank 
+background-image: url(https://www.dropbox.com/s/dg69zmfgg020onj/bitcoinpriceapril2019.png?raw=1)
+background-position: 50% 50%
+
+---
+
+# Example Code
+
+.pull-left[
+
+
+
+
+```r
+ggplot(data = gapminder, aes(x = gdpPercap, 
+	y = lifeExp, color = continent, fill= continent))+
+	geom_point()+geom_smooth(method = "lm") +
+*	scale_x_log10()+ylab("Life Expectancy (Years)")+
+*	xlab("Log GDP/Capita")
+```
+]
+
+.pull-right[
+![](01-slides_files/figure-html/gapminderp-1.png)&lt;!-- --&gt;
+]
+
+---
+
+class: inverse, center, middle
+
+# About this Class
+
+---
+
+# This Class Is
+
+![](01-slides_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+
+---
+
+# This Class Is
+
+![](01-slides_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+
+---
+
+# Example
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 22.8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 258 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 225 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.76 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Example II
+
+.pull-left[
+
+
+```
+## 
 ## Call:
 ## lm(formula = hwy ~ displ, data = mpg)
 ## 
@@ -519,21 +314,29 @@ Valiant
 ## (Intercept)  35.6977     0.7204   49.55   &lt;2e-16 ***
 ## displ        -3.5306     0.1945  -18.15   &lt;2e-16 ***
 ## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## Residual standard error: 3.836 on 232 degrees of freedom
-## Multiple R-squared:  0.5868, Adjusted R-squared:  0.585 
-## F-statistic: 329.5 on 1 and 232 DF,  p-value: &lt; 2.2e-16</code></pre>
-<p>]</p>
-<p>.pull-right[</p>
-<p><img src="/slides/01-slides_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-<p>]</p>
-<hr />
-</div>
-<div id="example-iii" class="section level1">
-<h1>Example III</h1>
-<p>.pull-left[</p>
-<pre><code>## 
+## Multiple R-squared:  0.5868,	Adjusted R-squared:  0.585 
+## F-statistic: 329.5 on 1 and 232 DF,  p-value: &lt; 2.2e-16
+```
+]
+
+.pull-right[
+
+![](01-slides_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+
+]
+
+---
+
+# Example III
+
+.pull-left[
+
+
+```
+## 
 ## Call:
 ## lm(formula = hwy ~ displ, data = mpg)
 ## 
@@ -546,155 +349,110 @@ Valiant
 ## (Intercept)  35.6977     0.7204   49.55   &lt;2e-16 ***
 ## displ        -3.5306     0.1945  -18.15   &lt;2e-16 ***
 ## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## Residual standard error: 3.836 on 232 degrees of freedom
-## Multiple R-squared:  0.5868, Adjusted R-squared:  0.585 
-## F-statistic: 329.5 on 1 and 232 DF,  p-value: &lt; 2.2e-16</code></pre>
-<p>]</p>
-<p>.pull-right[</p>
-<table style="text-align:center">
-<tr>
-<td colspan="2" style="border-bottom: 1px solid black">
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td>
-<em>Dependent variable:</em>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td colspan="1" style="border-bottom: 1px solid black">
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td>
-hwy
-</td>
-</tr>
-<tr>
-<td colspan="2" style="border-bottom: 1px solid black">
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-displ
-</td>
-<td>
--3.531<sup>***</sup>
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td>
-(0.195)
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-Constant
-</td>
-<td>
-35.698<sup>***</sup>
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td>
-(0.720)
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td colspan="2" style="border-bottom: 1px solid black">
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-Observations
-</td>
-<td>
-234
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-R<sup>2</sup>
-</td>
-<td>
-0.587
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-Adjusted R<sup>2</sup>
-</td>
-<td>
-0.585
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-Residual Std. Error
-</td>
-<td>
-3.836 (df = 232)
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-F Statistic
-</td>
-<td>
-329.453<sup>***</sup> (df = 1; 232)
-</td>
-</tr>
-<tr>
-<td colspan="2" style="border-bottom: 1px solid black">
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-<em>Note:</em>
-</td>
-<td style="text-align:right">
-<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
-</td>
-</tr>
-</table>
-<p>]</p>
-<hr />
-<p>.pull-left[</p>
-<ul>
-<li>Probability a student gets between a 65 and 85:</li>
-</ul>
-<pre><code>## [1] 0.6826895</code></pre>
-<p>]</p>
-<p>.pull-right[
-<img src="/slides/01-slides_files/figure-html/zscore3vis-1.png" width="672" />]</p>
-<hr />
-</div>
-<div id="dags" class="section level1">
-<h1>DAGs</h1>
-<p><img src="/slides/01-slides_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-<p><img src="/slides/01-slides_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-</div>
+## Multiple R-squared:  0.5868,	Adjusted R-squared:  0.585 
+## F-statistic: 329.5 on 1 and 232 DF,  p-value: &lt; 2.2e-16
+```
+]
+
+.pull-right[
+
+
+&lt;table style="text-align:center"&gt;&lt;tr&gt;&lt;td colspan="2" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;Dependent variable:&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td colspan="1" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;hwy&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="2" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align:left"&gt;displ&lt;/td&gt;&lt;td&gt;-3.531&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;(0.195)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;Constant&lt;/td&gt;&lt;td&gt;35.698&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;(0.720)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="2" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align:left"&gt;Observations&lt;/td&gt;&lt;td&gt;234&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;R&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.587&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;Adjusted R&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.585&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;Residual Std. Error&lt;/td&gt;&lt;td&gt;3.836 (df = 232)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;F Statistic&lt;/td&gt;&lt;td&gt;329.453&lt;sup&gt;***&lt;/sup&gt; (df = 1; 232)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="2" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;/td&gt;&lt;td style="text-align:right"&gt;&lt;sup&gt;*&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;**&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;***&lt;/sup&gt;p&lt;0.01&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+]
+
+---
+
+.pull-left[
+
+- Probability a student gets between a 65 and 85:
+
+
+```
+## [1] 0.6826895
+```
+
+]
+
+.pull-right[
+![](01-slides_files/figure-html/zscore3vis-1.png)&lt;!-- --&gt;
+]
+
+---
+
+# DAGs
+
+
+
+![](01-slides_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+
+
+![](01-slides_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div> "
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
