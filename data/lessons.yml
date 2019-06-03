@@ -3,7 +3,7 @@ lessons:
     header: True
 
   - title: "Preliminary Survey"
-    assignment: "00-preliminary-quiz"
+    assignment: "00-preliminary-survey"
     
   - title: "Introduction to Econometrics"
     date: "August 27 (Tu)"
