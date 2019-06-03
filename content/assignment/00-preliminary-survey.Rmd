@@ -1,0 +1,79 @@
+---
+title: "Problem set 1"
+date: "2018-01-18"
+due_date: "2018-01-19"
+due_time: "11:59 PM"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(pander)
+source(file.path(here::here(), "lib", "graphics.R"))
+```
+
+This is an *ungraded* and *anonymous* survey for me to evaluate the distribution of your math and statistics backgrounds. You do not need to write your name on it. Please complete all problems to the best of your ability. Your responses will help me craft the course to see which material we need to focus on at greater length, especially review material.
+
+# 1
+
+Using the following sample data: 
+ 
+$$8, 12, 9, 10, 11, 5, 15$$
+
+1. Find the median. 
+1. Calculate the sample mean, $\bar{x}$
+1. Calculate the sample standard deviation, $s$ 
+
+# 2
+
+For a fair, six-sided die:
+
+1. What is the probability of rolling a 5?
+2. What is the probability of rolling an even number?
+3. What is the probability of rolling an even number or a 3?
+4. If you have two fair dice, what is the probability of rolling a 6 on both dice?
+
+# 3
+
+Hedge fund A earns an average rate of return of 2.5% per year with a standard deviation of 0.5%, while hedge fund B earns an average rate of return of 3.0% per year with a standard deviation of 2.0\%. Which is more unusual, Hedge fund A earning a 4.0% return or hedge fund B earning a return -1.0% return? Why?^[Hint: Standardize the two hedge funds.]
+
+# 4 
+
+A discrete random variable $X$ has the following pdf:
+
+```{r, echo=FALSE, results="asis"}
+tribble(
+  ~x, ~`p(x)`,
+  10, 0.10,
+  20, 0.20,
+  30, 0.30,
+  40, 0.40
+  ) %>%
+  pandoc.table(justify = "ll")
+```
+
+Calculate the sample standard deviation of $x$.
+
+
+# 5 
+
+The random variable $Y$ is normally distributed with a mean of 50 and standard deviation of 12
+
+$$Y \sim N (50,12)$$
+
+a. What is the $Z$-score for $Y=74$?
+b. In your own words, what does this $Z$-score mean?
+c. What is the probability that $Y$ takes on a value *greater* than 74?
+
+# 6
+
+On a scale of 1 (least) to 10 (most), how anxious are you about this class? Feel free to share any specific anxieties (they have a better chance to be specifically addressed if you do!). 
+
+# 7 
+
+On a scale of 1 (least) to 10 (most), how familiar would you say you are with computer programming and/or statistical software? 
+
+# 8
+
+List any statistical software packages (e.g. R, Microsoft Excel, Stata, SAS, SPSS, Minitab, etc.) and any programming languages (e.g. html, php, C/++, Python, LaTeX, etc.) you have had any experience with, and rate your proficiency between 1 (least) and 5 (most), if applicable. 

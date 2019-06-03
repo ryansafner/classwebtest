@@ -44,6 +44,17 @@
     
     <item>
       <title>Problem set 1</title>
+      <link>https://classtest.ryansafner.com/assignment/00-preliminary-survey/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/assignment/00-preliminary-survey/</guid>
+      <description>This is an ungraded and anonymous survey for me to evaluate the distribution of your math and statistics backgrounds. You do not need to write your name on it. Please complete all problems to the best of your ability. Your responses will help me craft the course to see which material we need to focus on at greater length, especially review material.
+1 Using the following sample data:
+\[8, 12, 9, 10, 11, 5, 15\]</description>
+    </item>
+    
+    <item>
+      <title>Problem set 1</title>
       <link>https://classtest.ryansafner.com/assignment/01-problem-set/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
@@ -121,7 +132,7 @@ To encourage attendance and preparation, I’m borrowing and adapting Dr. Thomp
       
       <guid>https://classtest.ryansafner.com/schedule/</guid>
       <description>Here’s your roadmap for the semester!
-  Readings should be completed before each class session  Assignments are due by 11:59 PM on the day they are due  Class materials (slides, in-class activities, etc.) will be added on the day of class  R work     Statistics Review and Introduction to R Reading Assignment Class Slides   August 27 (Tu) Introduction to Econometrics        August 29 (Th) The Quest for Causality        September 3 (Tu) Descriptive Statistics        September 5 (Th) Random Variables        September 10 (Tu) Meet R         Linear Regression Reading Assignment Class Slides   September 12 (Th) Correlation and Linear Regression Basics        September 17 (Tu) Goodness of Fit, Bias, and Precision        September 19 (Th) Hypothesis Testing for Regression        January 18 (F)  Problem set 1        January 21 (M) No class; Martin Luther King Jr.</description>
+  Readings should be completed before each class session  Assignments are due by 11:59 PM on the day they are due  Class materials (slides, in-class activities, etc.) will be added on the day of class  R work     Statistics Review and Introduction to R Reading Assignment Class Slides    Preliminary Survey        August 27 (Tu) Introduction to Econometrics        August 29 (Th) The Quest for Causality        September 3 (Tu) Descriptive Statistics        September 5 (Th) Random Variables        September 10 (Tu) Meet R         Linear Regression Reading Assignment Class Slides   September 12 (Th) Correlation and Linear Regression Basics        September 17 (Tu) Goodness of Fit, Bias, and Precision        September 19 (Th) Hypothesis Testing for Regression        January 18 (F)  Problem set 1        January 21 (M) No class; Martin Luther King Jr.</description>
     </item>
     
     <item>

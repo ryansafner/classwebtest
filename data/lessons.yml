@@ -2,6 +2,9 @@ lessons:
   - title: '<span class="fake-header-table">Statistics Review and Introduction to R</span>'
     header: True
 
+  - title: "Preliminary Survey"
+    assignment: "00-preliminary-quiz"
+    
   - title: "Introduction to Econometrics"
     date: "August 27 (Tu)"
     class: "01-class"
