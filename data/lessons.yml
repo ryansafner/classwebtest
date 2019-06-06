@@ -7,40 +7,40 @@ lessons:
     
   - title: "Introduction to Econometrics"
     date: "August 27 (Tu)"
-    class: "01-class"
+    appendix: "01-class"
     slides: "01-slides"
     r: "01-r"
 
   - title: "The Quest for Causality"
     date: "August 29 (Th)"
-    class: "02-class"
+    appendix: "02-class"
     
   - title: "Descriptive Statistics"
     date: "September 3 (Tu)"
-    class: "03-class"
+    appendix: "03-class"
   
   - title: "Random Variables"
     date: "September 5 (Th)"
-    class: "04-class"
+    appendix: "04-class"
   
   - title: "Meet R"
     date: "September 10 (Tu)"
-    class: "05-class"
+    appendix: "05-class"
 
   - title: '<span class="fake-header-table">Linear Regression</span>'
     header: True
 
   - title: "Correlation and Linear Regression Basics"
     date: "September 12 (Th)"
-    class: "06-class"
+    appendix: "06-class"
 
   - title: "Goodness of Fit, Bias, and Precision"
     date: "September 17 (Tu)"
-    class: "07-class"
+    appendix: "07-class"
 
   - title: "Hypothesis Testing for Regression"
     date: "September 19 (Th)"
-    class: "08-class"
+    appendix: "08-class"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 1**'
     date: "January 18 (F)"

@@ -1,0 +1,77 @@
+---
+title: "The Summation Operatorwqe"
+date: "2019-01-07"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# The Summation Operator
+
+## Definition
+
+Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter $\Sigma$ --"sigma") as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics. 
+
+Let $X$ be a random variable from which a sample of $n$ observations is observed, so we have a sequence $\{x_1, x_2,...,x_n\}$ i.e. $x_i, $ for $i=1,2,...,n$. Then the total sum of the observations $(x_1+x_2+...+x_n)$ can be represented as:
+
+$$\sum_{i=1}^n x_i = x_1+x_2+...+x_n$$
+
+- The term beneath $\Sigma$ is known as the ``index,'' which tells us where to begin our adding (at the 1\textsuperscript{st} individual $x$ term, $x_1$)
+    - Note other letters, such as $j$, or $k$ may be used (especially if $i$ is defined elsewhere)
+- The term above $\Sigma$ is the total number of $x$ terms we should add $(n)$
+- Essentially, read $\displaystyle \sum_{i=1}^{n} x_i$ as "add up all the individual $x$ observations from the 1\textsuperscript{st} $(x_1)$ to the final $n$\textsuperscript{th} $(x_n)$."
+
+## Useful Properties
+
+**Rule 1**: The summation of a constant $k$ times a random variable $X_i$ is equal to the constant times the summation of that random variable: 
+
+$$\sum_{i=1}^n kX_i = k \sum^n_{i=1} X_i$$
+
+Proof: 
+
+$$\begin{align*}
+\sum_{i=1}^n kX_i &= k x_1 + kx_2 +...+ kx_n\\
+&= k(x_1+x_2+...x_n)\\
+&= k\sum_{i=1}^n X_i. \\
+\end{align*}$$
+
+**Rule 2**: The summation of a sum of two random variables is equal to the sum of their summations:
+
+$$\sum_{i=1}^n (X_i+Y_i) = \sum_{i=1}^n X_i + \sum_{i=1}^n Y_i$$
+
+Proof:
+
+$$\begin{align*}
+\sum_{i=1}^n (X_i+Y_i) &=(X_1+Y_1) + (X_2+Y_2) + ... (X_n+Y_n)\\
+&=(X_1+X_2+...+X_n) + (Y_1+Y_2+...+Y_n)\\
+&=\sum_{i=1}^n (X_i+Y_i)\\
+\end{align*}$$
+
+**Rule 3**: The summation of constant over $n$ observations is the product of the constant and $n$:
+
+$$\sum_{i=1}^n k = nk$$
+
+Proof:
+
+$$\sum_{i=1}^n k = \underbrace{k + k + ... + k}_{n \text{ times}} = nk$$
+
+**Combining these 3 rules:** for the sum of a linear combination of a random variable ($a+bX$):
+
+$$\sum_{i=1}^n (a+bX_i) = na+b\sum_{i=1}^n X_i$$
+
+Proof: left to you as an exercise!
+
+
+<figure>
+[![First slide](/images/slides/slides_2019-01-07.png)](/slides/MPA-612_2019-01-07.pdf)
+</figure>
+
+
+# Pit market
+

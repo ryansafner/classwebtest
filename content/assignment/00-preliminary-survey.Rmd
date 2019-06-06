@@ -1,8 +1,8 @@
 ---
-title: "Problem set 1"
+title: "Preliminary Survey on Statistics and Software"
 date: "2018-01-18"
 due_date: "2018-01-19"
-due_time: "11:59 PM"
+due_time: ""
 editor_options: 
   chunk_output_type: console
 ---
@@ -21,18 +21,18 @@ Using the following sample data:
  
 $$8, 12, 9, 10, 11, 5, 15$$
 
-1. Find the median. 
-1. Calculate the sample mean, $\bar{x}$
-1. Calculate the sample standard deviation, $s$ 
+a. Find the median. 
+b. Calculate the sample mean, $\bar{x}$
+c. Calculate the sample standard deviation, $s$ 
 
 # 2
 
 For a fair, six-sided die:
 
-1. What is the probability of rolling a 5?
-2. What is the probability of rolling an even number?
-3. What is the probability of rolling an even number or a 3?
-4. If you have two fair dice, what is the probability of rolling a 6 on both dice?
+a. What is the probability of rolling a 5?
+b. What is the probability of rolling an even number?
+c. What is the probability of rolling an even number or a 3?
+d. If you have two fair dice, what is the probability of rolling a 6 on both dice?
 
 # 3
 
@@ -53,7 +53,7 @@ tribble(
   pandoc.table(justify = "ll")
 ```
 
-Calculate the sample standard deviation of $x$.
+Calculate the sample standard deviation, $s$ of $X$.
 
 
 # 5 

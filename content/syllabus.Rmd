@@ -12,6 +12,8 @@ library(tibble)
 library(pander)
 ```
 
+- [<i class="fas fa-file-pdf"></i> `Download as PDF`](/files/syllabus.pdf)
+
 <span class="newthought">Econometrics</span> [^courseinfo] is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions.
 
  

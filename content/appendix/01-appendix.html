@@ -1,0 +1,69 @@
+---
+title: "The Summation Operatorwqe"
+date: "2019-01-07"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<h2>Contents</h2>
+<div id="TOC">
+<ul>
+<li><a href="#the-summation-operator">The Summation Operator</a><ul>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#useful-properties">Useful Properties</a></li>
+</ul></li>
+<li><a href="#pit-market">Pit market</a></li>
+</ul>
+</div>
+
+<h2 id="the-summation-operator">The Summation Operator</h2>
+<h3 id="definition">Definition</h3>
+<p>Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter <span class="math inline">\(\Sigma\)</span> –“sigma”) as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics.</p>
+<p>Let <span class="math inline">\(X\)</span> be a random variable from which a sample of <span class="math inline">\(n\)</span> observations is observed, so we have a sequence <span class="math inline">\(\{x_1, x_2,...,x_n\}\)</span> i.e. $x_i, $ for <span class="math inline">\(i=1,2,...,n\)</span>. Then the total sum of the observations <span class="math inline">\((x_1+x_2+...+x_n)\)</span> can be represented as:</p>
+<p><span class="math display">\[\sum_{i=1}^n x_i = x_1+x_2+...+x_n\]</span></p>
+<ul>
+<li>The term beneath <span class="math inline">\(\Sigma\)</span> is known as the ``index,’’ which tells us where to begin our adding (at the 1 individual <span class="math inline">\(x\)</span> term, <span class="math inline">\(x_1\)</span>)
+<ul>
+<li>Note other letters, such as <span class="math inline">\(j\)</span>, or <span class="math inline">\(k\)</span> may be used (especially if <span class="math inline">\(i\)</span> is defined elsewhere)</li>
+</ul></li>
+<li>The term above <span class="math inline">\(\Sigma\)</span> is the total number of <span class="math inline">\(x\)</span> terms we should add <span class="math inline">\((n)\)</span></li>
+<li>Essentially, read <span class="math inline">\(\displaystyle \sum_{i=1}^{n} x_i\)</span> as “add up all the individual <span class="math inline">\(x\)</span> observations from the 1 <span class="math inline">\((x_1)\)</span> to the final <span class="math inline">\(n\)</span> <span class="math inline">\((x_n)\)</span>.”</li>
+</ul>
+<h3 id="useful-properties">Useful Properties</h3>
+<p><strong>Rule 1</strong>: The summation of a constant <span class="math inline">\(k\)</span> times a random variable <span class="math inline">\(X_i\)</span> is equal to the constant times the summation of that random variable:</p>
+<p><span class="math display">\[\sum_{i=1}^n kX_i = k \sum^n_{i=1} X_i\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+\sum_{i=1}^n kX_i &amp;= k x_1 + kx_2 +...+ kx_n\\
+&amp;= k(x_1+x_2+...x_n)\\
+&amp;= k\sum_{i=1}^n X_i. \\
+\end{align*}\]</span></p>
+<p><strong>Rule 2</strong>: The summation of a sum of two random variables is equal to the sum of their summations:</p>
+<p><span class="math display">\[\sum_{i=1}^n (X_i+Y_i) = \sum_{i=1}^n X_i + \sum_{i=1}^n Y_i\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+\sum_{i=1}^n (X_i+Y_i) &amp;=(X_1+Y_1) + (X_2+Y_2) + ... (X_n+Y_n)\\
+&amp;=(X_1+X_2+...+X_n) + (Y_1+Y_2+...+Y_n)\\
+&amp;=\sum_{i=1}^n (X_i+Y_i)\\
+\end{align*}\]</span></p>
+<p><strong>Rule 3</strong>: The summation of constant over <span class="math inline">\(n\)</span> observations is the product of the constant and <span class="math inline">\(n\)</span>:</p>
+<p><span class="math display">\[\sum_{i=1}^n k = nk\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\sum_{i=1}^n k = \underbrace{k + k + ... + k}_{n \text{ times}} = nk\]</span></p>
+<p><strong>Combining these 3 rules:</strong> for the sum of a linear combination of a random variable (<span class="math inline">\(a+bX\)</span>):</p>
+<p><span class="math display">\[\sum_{i=1}^n (a+bX_i) = na+b\sum_{i=1}^n X_i\]</span></p>
+<p>Proof: left to you as an exercise!</p>
+<figure>
+<a href="/slides/MPA-612_2019-01-07.pdf"><img src="/images/slides/slides_2019-01-07.png" alt="First slide" /></a>
+</figure>
+<h2 id="pit-market">Pit market</h2>
