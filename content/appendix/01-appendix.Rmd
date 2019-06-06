@@ -1,6 +1,6 @@
 ---
-title: "The Summation Operatorwqe"
-date: "2019-01-07"
+title: "Appendix for Class 1"
+date: ""
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl
@@ -27,7 +27,7 @@ $$\sum_{i=1}^n x_i = x_1+x_2+...+x_n$$
 - The term above $\Sigma$ is the total number of $x$ terms we should add $(n)$
 - Essentially, read $\displaystyle \sum_{i=1}^{n} x_i$ as "add up all the individual $x$ observations from the 1\textsuperscript{st} $(x_1)$ to the final $n$\textsuperscript{th} $(x_n)$."
 
-## Useful Properties
+## Useful Properties of Summation Operators
 
 **Rule 1**: The summation of a constant $k$ times a random variable $X_i$ is equal to the constant times the summation of that random variable: 
 
@@ -67,11 +67,69 @@ $$\sum_{i=1}^n (a+bX_i) = na+b\sum_{i=1}^n X_i$$
 
 Proof: left to you as an exercise!
 
+## Advanced: Useful Properties for Regression
 
-<figure>
-[![First slide](/images/slides/slides_2019-01-07.png)](/slides/MPA-612_2019-01-07.pdf)
-</figure>
+There are some additional properties of summations that may not be immediately obvious, but will be quite essential in proving properties of linear regressions.
+
+Using the properties above, we can describe the **mean**, **variance**, and **covariance** of random variables.^[For more beyond the mere definition, see the appendix on **Covariance and Correlation**]
+
+First, define the mean of  a sequence $\{X_i: i=1,...,n\}$ and $\{Y_i: i=1,...,n\}$ as:
+
+$$\bar{X}=\frac{1}{n}\sum^n_{i=1}X_i$$
+
+Second, the variance of  $X$ is:
+
+$$var(X)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})^2$$
+
+Third, the covariance of $X$ and $Y$ is:
+
+$$cov(X,Y)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y})$$
 
 
-# Pit market
+**Rule 4**: The sum of the deviations of observations of $X_i$ from its mean ($\bar{X}$) is 0:
 
+$$\sum^n_{i=1} (X_i-\bar{X})=0$$
+
+Proof: 
+
+$$\begin{align*}
+	\sum^n_{i=1} (X_i-\bar{x}) &=\sum^n_{i=1}X_i-\sum^n_{i=1}\bar{X} && \\
+	&=\sum^n_{i=1}X_i-n\bar{X} && \text{Since $\bar{x}$ is a constant}\\
+	&=n\underbrace{\frac{\displaystyle\sum^n_{i=1}X_i}{n}}_{\bar{X}}-n\bar{X} && \text{Multiply the first term by }\frac{n}{n}=1\\ 
+	&=n\bar{X}-n\bar{X}&& \text{By the definition of the mean }\bar{X}\\
+	&=0 &&  \\
+\end{align*}$$
+
+**Rule 5**: The squared deviations of $X$ are equal to the product of $X$ times its deviations:
+
+$$\sum^n_{i=1} (X_i-\bar{X})^2=\sum^n_{i=1} X_i(X_i-\bar{X})$$
+
+Proof:
+	
+$$\begin{align*}
+	\sum^n_{i=1} (X_i-\bar{X})^2&=\sum^n_{i=1} (X_i-\bar{X})(X_i-\bar{X})	&& \text{Expanding the square}\\
+	&=\sum^n_{i=1} X_i(X_i-\bar{X})-\sum^n_{i=1}\bar{X}(X_i-\bar{X}) && \text{Breaking apart the first term} \\
+	&=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}\sum^n_{i=1}(X_i-\bar{X}) && \text{Since }\bar{X} \text{ is constant, not depending on } i's\\
+	&=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}(0) && \text{From rule 4} \\
+	&=\sum^n_{i=1} X_i(X_i-\bar{X}) && \text{Remainder after multiplying by 0}\\
+\end{align*}$$
+
+**Rule 6**: The following summations involving $X$ and $Y$ are equivalent:
+
+$$\sum^n_{i=1} Y_i(X_i-\bar{X})=\sum^n_{i=1}X_i(Y_i-\bar{Y})=\sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y})$$
+
+Proof:
+
+$$\begin{align*}
+	\sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &=\sum^n_{i=1} Y_i(X_i-\bar{X})-\sum^n_{i=1}\bar{Y}(X_i-\bar{X}) && \text{Breaking apart the second term} \\
+	&=\sum^n_{i=1} Y_i(X_i-\bar{X})-\bar{Y}(0) && \text{From rule 4}\\
+	&=\sum^n_{i=1} Y_i(X_i-\bar{X}) && \text{Remainder after multiplying by 0}\\
+\end{align*}$$
+
+equivalently:
+
+$$\begin{align*}
+	\sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\sum^n_{i=1}\bar{X}(Y_i-\bar{Y}) && \text{Breaking apart the first term} \\
+	&=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\bar{X}(0) && \text{From rule 4}\\
+	&=\sum^n_{i=1} X_i(Y_i-\bar{Y}) && \text{Remainder after multiplying by 0}\\
+\end{align*}$$

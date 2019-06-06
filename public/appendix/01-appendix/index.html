@@ -11,13 +11,13 @@
 
     <meta name="twitter:card" value="summary_large_image">
     <meta name="twitter:site" content="@ryansafner">
-    <meta name="twitter:title" content="The Summation Operatorwqe | ECON 480: Econometrics">
+    <meta name="twitter:title" content="Appendix for Class 1 | ECON 480: Econometrics">
     <meta name="twitter:creator" content="@ryansafner">
     <meta name="twitter:image" content="https://classtest.ryansafner.com/images/econ_meta.png">
     <meta name="twitter:description" content="Understand and use economic reasoning to evaluate public policy" />
 
     <meta property="og:site_name" content="ECON 480: Econometrics"/>
-    <meta property="og:title" content="The Summation Operatorwqe | ECON 480: Econometrics">
+    <meta property="og:title" content="Appendix for Class 1 | ECON 480: Econometrics">
     <meta property="og:type" content="article" />
     <meta property="article:author" content="https://www.facebook.com/ryansafner" />
     <meta property="og:url" content="https://classtest.ryansafner.com/" />
@@ -26,7 +26,7 @@
 
     <meta name="generator" content="Hugo 0.54.0" />    
 
-    <title>The Summation Operatorwqe | ECON 480: Econometrics</title>
+    <title>Appendix for Class 1 | ECON 480: Econometrics</title>
     <link rel="canonical" href="https://classtest.ryansafner.com/appendix/01-appendix/">
     <link href="/theme/css/tufte.css" rel="stylesheet">
     <link href="/theme/css/latex.css" rel="stylesheet">
@@ -127,9 +127,9 @@
 
 
     <article class="group">
-    <h1>The Summation Operatorwqe</h1>
+    <h1>Appendix for Class 1</h1>
 
-    <h2>2019/01/07</h2>
+    <h2>0001/01/01</h2>
     
     
 <!-- BLOGDOWN-HEAD -->
@@ -140,9 +140,9 @@
 <ul>
 <li><a href="#the-summation-operator">The Summation Operator</a><ul>
 <li><a href="#definition">Definition</a></li>
-<li><a href="#useful-properties">Useful Properties</a></li>
+<li><a href="#useful-properties-of-summation-operators">Useful Properties of Summation Operators</a></li>
+<li><a href="#advanced-useful-properties-for-regression">Advanced: Useful Properties for Regression</a></li>
 </ul></li>
-<li><a href="#pit-market">Pit market</a></li>
 </ul>
 </div>
 
@@ -159,7 +159,7 @@
 <li>The term above <span class="math inline">\(\Sigma\)</span> is the total number of <span class="math inline">\(x\)</span> terms we should add <span class="math inline">\((n)\)</span></li>
 <li>Essentially, read <span class="math inline">\(\displaystyle \sum_{i=1}^{n} x_i\)</span> as “add up all the individual <span class="math inline">\(x\)</span> observations from the 1 <span class="math inline">\((x_1)\)</span> to the final <span class="math inline">\(n\)</span> <span class="math inline">\((x_n)\)</span>.”</li>
 </ul>
-<h3 id="useful-properties">Useful Properties</h3>
+<h3 id="useful-properties-of-summation-operators">Useful Properties of Summation Operators</h3>
 <p><strong>Rule 1</strong>: The summation of a constant <span class="math inline">\(k\)</span> times a random variable <span class="math inline">\(X_i\)</span> is equal to the constant times the summation of that random variable:</p>
 <p><span class="math display">\[\sum_{i=1}^n kX_i = k \sum^n_{i=1} X_i\]</span></p>
 <p>Proof:</p>
@@ -183,10 +183,51 @@
 <p><strong>Combining these 3 rules:</strong> for the sum of a linear combination of a random variable (<span class="math inline">\(a+bX\)</span>):</p>
 <p><span class="math display">\[\sum_{i=1}^n (a+bX_i) = na+b\sum_{i=1}^n X_i\]</span></p>
 <p>Proof: left to you as an exercise!</p>
-<figure>
-<a href="/slides/MPA-612_2019-01-07.pdf"><img src="/images/slides/slides_2019-01-07.png" alt="First slide" /></a>
-</figure>
-<h2 id="pit-market">Pit market</h2>
+<h3 id="advanced-useful-properties-for-regression">Advanced: Useful Properties for Regression</h3>
+<p>There are some additional properties of summations that may not be immediately obvious, but will be quite essential in proving properties of linear regressions.</p>
+<p>Using the properties above, we can describe the <strong>mean</strong>, <strong>variance</strong>, and <strong>covariance</strong> of random variables.<span><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">For more beyond the mere definition, see the appendix on <strong>Covariance and Correlation</strong><br />
+<br />
+</span></span></p>
+<p>First, define the mean of a sequence <span class="math inline">\(\{X_i: i=1,...,n\}\)</span> and <span class="math inline">\(\{Y_i: i=1,...,n\}\)</span> as:</p>
+<p><span class="math display">\[\bar{X}=\frac{1}{n}\sum^n_{i=1}X_i\]</span></p>
+<p>Second, the variance of <span class="math inline">\(X\)</span> is:</p>
+<p><span class="math display">\[var(X)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})^2\]</span></p>
+<p>Third, the covariance of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is:</p>
+<p><span class="math display">\[cov(X,Y)=\frac{1}{n}\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y})\]</span></p>
+<p><strong>Rule 4</strong>: The sum of the deviations of observations of <span class="math inline">\(X_i\)</span> from its mean (<span class="math inline">\(\bar{X}\)</span>) is 0:</p>
+<p><span class="math display">\[\sum^n_{i=1} (X_i-\bar{X})=0\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{x}) &amp;=\sum^n_{i=1}X_i-\sum^n_{i=1}\bar{X} &amp;&amp; \\
+    &amp;=\sum^n_{i=1}X_i-n\bar{X} &amp;&amp; \text{Since $\bar{x}$ is a constant}\\
+    &amp;=n\underbrace{\frac{\displaystyle\sum^n_{i=1}X_i}{n}}_{\bar{X}}-n\bar{X} &amp;&amp; \text{Multiply the first term by }\frac{n}{n}=1\\ 
+    &amp;=n\bar{X}-n\bar{X}&amp;&amp; \text{By the definition of the mean }\bar{X}\\
+    &amp;=0 &amp;&amp;  \\
+\end{align*}\]</span></p>
+<p><strong>Rule 5</strong>: The squared deviations of <span class="math inline">\(X\)</span> are equal to the product of <span class="math inline">\(X\)</span> times its deviations:</p>
+<p><span class="math display">\[\sum^n_{i=1} (X_i-\bar{X})^2=\sum^n_{i=1} X_i(X_i-\bar{X})\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})^2&amp;=\sum^n_{i=1} (X_i-\bar{X})(X_i-\bar{X})   &amp;&amp; \text{Expanding the square}\\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\sum^n_{i=1}\bar{X}(X_i-\bar{X}) &amp;&amp; \text{Breaking apart the first term} \\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}\sum^n_{i=1}(X_i-\bar{X}) &amp;&amp; \text{Since }\bar{X} \text{ is constant, not depending on } i&#39;s\\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X})-\bar{X}(0) &amp;&amp; \text{From rule 4} \\
+    &amp;=\sum^n_{i=1} X_i(X_i-\bar{X}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
+<p><strong>Rule 6</strong>: The following summations involving <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are equivalent:</p>
+<p><span class="math display">\[\sum^n_{i=1} Y_i(X_i-\bar{X})=\sum^n_{i=1}X_i(Y_i-\bar{Y})=\sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y})\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X})-\sum^n_{i=1}\bar{Y}(X_i-\bar{X}) &amp;&amp; \text{Breaking apart the second term} \\
+    &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X})-\bar{Y}(0) &amp;&amp; \text{From rule 4}\\
+    &amp;=\sum^n_{i=1} Y_i(X_i-\bar{X}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
+<p>equivalently:</p>
+<p><span class="math display">\[\begin{align*}
+    \sum^n_{i=1} (X_i-\bar{X})(Y_i-\bar{Y}) &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\sum^n_{i=1}\bar{X}(Y_i-\bar{Y}) &amp;&amp; \text{Breaking apart the first term} \\
+    &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y})-\bar{X}(0) &amp;&amp; \text{From rule 4}\\
+    &amp;=\sum^n_{i=1} X_i(Y_i-\bar{Y}) &amp;&amp; \text{Remainder after multiplying by 0}\\
+\end{align*}\]</span></p>
 
 
     </article>

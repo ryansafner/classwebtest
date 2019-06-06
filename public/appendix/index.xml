@@ -6,18 +6,17 @@
     <description>Recent content in Appendixes on Econometrics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://classtest.ryansafner.com/appendix/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The Summation Operatorwqe</title>
+      <title>Appendix for Class 1</title>
       <link>https://classtest.ryansafner.com/appendix/01-appendix/</link>
-      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/appendix/01-appendix/</guid>
-      <description>Contents  The Summation Operator Definition Useful Properties  Pit market   The Summation Operator Definition Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter \(\Sigma\) –“sigma”) as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics.</description>
+      <description>Contents  The Summation Operator Definition Useful Properties of Summation Operators Advanced: Useful Properties for Regression    The Summation Operator Definition Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter \(\Sigma\) –“sigma”) as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics.</description>
     </item>
     
   </channel>
