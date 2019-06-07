@@ -1,5 +1,5 @@
 lessons:
-  - title: '<span class="fake-header-table">Statistics Review and Introduction to R</span>'
+  - title: '<span class="fake-header-table">Diving Right In with R</span>'
     header: True
 
   - title: "Preliminary Survey"
@@ -13,34 +13,39 @@ lessons:
 
   - title: "The Quest for Causality"
     date: "August 29 (Th)"
-
-  - title: "Descriptive Statistics"
-    date: "September 3 (Tu)"
-
-  - title: "Random Variables"
-    date: "September 5 (Th)"
+    slides: "02-slides"
 
   - title: "Meet R"
+    date: "September 3 (Tu)"
+    slides: "03-slides"
+    appendix: "03-appendix"
+
+  - title: "Data Visualization with ggplot2"
+    date: "September 5 (Th)"
+    slides: "04-slides"
+
+  - title: "Data Wrangling in the tidyverse"
     date: "September 10 (Tu)"
+    slides: "05-slides"
+
+  - title: "Random Variables and Distributions"
+    date: "September 12 (Th)"
 
   - title: '<span class="fake-header-table">Linear Regression</span>'
     header: True
 
-  - title: "Correlation and Linear Regression Basics"
-    date: "September 12 (Th)"
-
-  - title: "Goodness of Fit, Bias, and Precision"
+  - title: "OLS Linear Regression"
     date: "September 17 (Tu)"
 
-  - title: "Hypothesis Testing for Regression"
+  - title: "Goodness of Fit, Bias, and Precision"
     date: "September 19 (Th)"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Problem set 1**'
-    date: "January 18 (F)"
-    assignment: "01-problem-set"
+  - title: "Regression Diagnostics"
+    date: "September 23 (Th)"
 
-  - title: "*No class; Martin Luther King Jr. Day*"
-    date: "January 21 (M)"
+  - title: "Inferential Statistics"
+
+  - title: "Inference for Regression with infer"
 
   - title: '<i class="fas fa-star"></i> **Midterm Exam**'
     date: "February 15 (F)"
@@ -48,8 +53,34 @@ lessons:
   - title: "*No class; Presidents' Day*"
     date: "February 18 (M)"
 
-  - title: '<span class="fake-header-table">Economic models</span>'
+  - title: '<span class="fake-header-table">Extensions to Regression</span>'
     header: True
+
+  - title: "Omitted Variable Bias"
+  
+  - title: "Multivariate OLS Estimators"
+  
+  - title: "Model Specification Strategies"
+  
+  - title: "How to Write an Empirical Paper"
+  
+  - title: "Dummy Variables"
+  
+  - title: "Categories and Interactions"
+  
+  - title: "Polynomial Models"
+  
+  - title: "Logarithmic Models"
+  
+  - title: "Panel Data and Fixed Effects Models"
+  
+  - title: "Difference in Difference Models"
+  
+  - title: "Instrumental Variables Models"
+  
+  - title: "Regression Discontinuity Models"
+  
+  - title: "Binary Dependent Variables Models"
 
   - title: '<span class="fake-header-table">Final</span>'
     header: True
