@@ -28,10 +28,10 @@
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/assignment/01-problem-set/</guid>
-      <description>Submit this as a PDF on Learning Suite. Show your work when possible.
+      <description>Answer Key  Submit this as a PDF on Learning Suite. Show your work when possible.
 1 Download one of these datasetsSource: Global Consumption and Income Project. All incomes expressed in 2005 USD PPP.
  (they’re identical; one is an Excel file, one is a CSV file, which is easier to work with in R):
-  gcip_raw.xlsx  gcip_raw.csv  Choose five countries you are interested in. For each of these countries, calculate the 90/10 ratio for 1980, 1990, 2000, and 2014.</description>
+  gcip_raw.xlsx  gcip_raw.csv  Choose five countries you are interested in.</description>
     </item>
     
   </channel>

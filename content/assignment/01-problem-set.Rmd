@@ -13,6 +13,8 @@ library(pander)
 source(file.path(here::here(), "lib", "graphics.R"))
 ```
 
+- [<i class="far fa-life-ring"></i> `Answer Key`](/files/answers/answer1.html)
+
 **Submit this as a PDF on Learning Suite.** Show your work when possible.
 
 # 1

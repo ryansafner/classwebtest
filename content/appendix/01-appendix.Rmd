@@ -1,6 +1,5 @@
 ---
 title: "Appendix for Class 1"
-date: ""
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl
@@ -50,7 +49,7 @@ Proof:
 $$\begin{align*}
 \sum_{i=1}^n (X_i+Y_i) &=(X_1+Y_1) + (X_2+Y_2) + ... (X_n+Y_n)\\
 &=(X_1+X_2+...+X_n) + (Y_1+Y_2+...+Y_n)\\
-&=\sum_{i=1}^n (X_i+Y_i)\\
+&=\sum_{i=1}^n X_i + \sum_{i=1}^n Y_i\\
 \end{align*}$$
 
 **Rule 3**: The summation of constant over $n$ observations is the product of the constant and $n$:
