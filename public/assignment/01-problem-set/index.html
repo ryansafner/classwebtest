@@ -137,10 +137,95 @@
 
 
 <ul>
+<li><a href="/files/markdown/hw1.Rmd"><i class="fab fa-markdown"></i> <code>Download .Rmd</code></a></li>
 <li><a href="/files/answers/answer1.html"><i class="far fa-life-ring"></i> <code>Answer Key</code></a></li>
 </ul>
-<p><strong>Submit this as a PDF on Learning Suite.</strong> Show your work when possible.</p>
-<h2 id="section">1</h2>
+<p>For this homework, you may type up or handwrite the answers to each question. When you get to the <em>R</em> questions at the end, please attach a copy of your <em>.R</em> file (with comments!) of commands for each relevant question. For future homeworks, I will demonstrate how you can complete everything using <em>R Markdown</em>, but you will not be obligated to do so.</p>
+<h2 id="theory-concepts">Theory &amp; Concepts</h2>
+<p>For the following questions, please answer the questions completely but succinctly (2-3 sentences).</p>
+<h3 id="section">1</h3>
+<p>Explain the difference between exogeneity and endogeneity.</p>
+<h3 id="section-1">2</h3>
+<p>Explain how conducting a randomized controlled experiment helps to identify the causal connection between two variables.</p>
+<h2 id="theory-problems">Theory Problems</h2>
+<p>For the following questions, please <em>show all work</em> and explain answers as necessary. You may lose points if you only write the correct answer. You may use <em>R</em> to verify your answers, but you are expected to reach the answers in this section “manually.”</p>
+<h3 id="section-2">3</h3>
+<p>A college senior has applied for admission to two medical schools, <em>A</em> and <em>B</em>. She estimates the probability of acceptance at <em>A</em> at 0.7 and the probability of acceptance at <em>B</em> at 0.4 and the probability that she will be admitted to both at 0.2. What is the chance she will <em>not</em> be accepted at <em>either</em> school? (Consult the probability handout for basic probability rules.)</p>
+<h3 id="section-3">4</h3>
+<p>Suppose the probabilities of a visitor to Amazon’s website and buying 0, 1, or 2 books are 0.2, 0.4, and 0.4 respectively. What are the <em>expected number</em> of books a visitor will purchase and the <em>standard deviation</em> of book purchases?</p>
+<h3 id="section-4">5</h3>
+<p>Scores on the SAT (out of 1600) are approximately normally distributed with a mean of 500 and standard deviation of 100.</p>
+<h4 id="a.">a.</h4>
+<p>What is the probability of getting a score between a 400 and a 700?</p>
+<h4 id="b.">b.</h4>
+<p>What is the probability of getting a score between a 300 and a 800?</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><p>What is the probability of getting <em>at least</em> a 700?</p></li>
+<li><p>What is the probability of getting <em>at most</em> a 700?</p></li>
+</ol>
+<ul>
+<li><ol start="5" style="list-style-type: lower-alpha">
+<li>What is the probability of getting exactly a 500?</li>
+</ol></li>
+</ul>
+<h2 id="r-problems">R Problems</h2>
+<p>For the following problems, please attach/write the answers to each question on the same document as the previous problems, but also include a printed/attached (and commented!) <em>.R</em> script file of your commands to answer the questions.</p>
+<h3 id="section-5">6</h3>
+<p>Using the “table” method of finding standard deviation for a random variable discussed in class, use <em>R</em> to find the standard deviation of the following discrete random variable, <span class="math inline">\(X\)</span>, that has the following pdf:</p>
+<table style="width:17%;">
+<colgroup>
+<col width="6%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">x</th>
+<th align="left">p(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">0.3</td>
+</tr>
+<tr class="even">
+<td align="left">5</td>
+<td align="left">0.5</td>
+</tr>
+<tr class="odd">
+<td align="left">10</td>
+<td align="left">0.2</td>
+</tr>
+</tbody>
+</table>
+<p>To jog your memory, standard deviation is the square root of the sum of the squared deviations from the mean weighted by the probability of the associated value of <span class="math inline">\(X\)</span>.</p>
+<h3 id="section-6">7</h3>
+<p>Redo question 5 parts a-d using the <code>pnorm()</code> command in <code>R</code>.</p>
+<h3 id="section-7">8</h3>
+<p>We will use the dataset <code>mpg</code>, which is a part of the <code>ggplot2</code> package, and describes fuel economy data from the EPA on models of cars released between 1999-2008. Load (or install, if you don’t have) the <code>ggplot2</code> package in order to use <code>mpg</code>.</p>
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>What variables are included in the <code>mpg</code> data? (You don’t need to explain them, they aren’t well-documented, only write down they are).</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>Find summary statistics for <code>hwy</code> and <code>cty</code> (miles per gallon on the highway and in the city, respectively).</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-alpha">
+<li>How many different manufacturers are in the data, and how many cars from each manufacturer?</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: lower-alpha">
+<li>How many different classes are in the data, and how many cars from each class?</li>
+</ol></li>
+<li><ol start="5" style="list-style-type: lower-alpha">
+<li>Plot two histograms, one of <code>hwy</code> and one of <code>cty</code></li>
+</ol></li>
+<li><ol start="6" style="list-style-type: lower-alpha">
+<li>Plot a boxplot of <code>hwy</code> mpg by <code>manufacturer</code>. Which manufacturer appears to have the highest average highway mpg? Which appears to have the largest variance? Which appears to have outliers? (There are too many manufacturers for <code>R</code> to print them on the axis by default, but they are listed in alphabetical order, check using your answers to part c.)</li>
+</ol></li>
+<li><ol start="7" style="list-style-type: lower-alpha">
+<li>Plot a boxplot of <code>hwy</code> by <code>class</code>. Which car classes appear to have the highest average highway mpg? Highest variance?</li>
+</ol></li>
+</ul>
 <p>Download one of these datasets<span><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Source: <a href="https://jackblun.github.io/Globalinc/">Global Consumption and Income Project</a>. All incomes expressed in 2005 USD PPP.<br />
 <br />
 </span></span> (they’re identical; one is an Excel file, one is a CSV file, which is easier to work with in R):</p>
@@ -156,7 +241,7 @@
 <li>Include a table of these ratios in your problem set. Try ploting all four ratios for all five countries at the same time too and include that graph.</li>
 <li>Speculate about country- and time-based differences between these countries. <strong>Answer in ≈50 words.</strong></li>
 </ol>
-<h2 id="section-1">2</h2>
+<h2 id="section-8">2</h2>
 <p>Download one of these datasets<span><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Source: ESPP. All numbers expressed in 1990 international USD (i.e. they’re all real; you don’t need to adjust for inflation or anything).<br />
 <br />
 </span></span> (they’re identical; one is an Excel file, one is a CSV file, which is easier to work with in R):</p>
@@ -172,7 +257,7 @@
 <li>Explain why you need to calculate the compound annual growth rate. <strong>Answer in a sentence.</strong></li>
 <li>Discuss the results. Which countries grew the most in which 100-year periods? Speculate about why. <strong>Answer in ≈75 words.</strong></li>
 </ol>
-<h2 id="section-2">3</h2>
+<h2 id="section-9">3</h2>
 <p>The following table shows the nominal GDP (in 2015 US dollars) and the population of Japan in 2013 and 2014:<span><label for="sn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="sidenote">Source: <a href="https://data.worldbank.org/">The World Bank</a>.<br />
 <br />
 </span></span></p>
@@ -210,7 +295,7 @@
 <li>The fall in the population was enough to offset the fall in the GDP for an overall growth in GDP per capita between 2013 and 2014.</li>
 <li>The GDP per capita fell by 6.31% between 2013 and 2014.</li>
 </ol>
-<h2 id="section-3">4</h2>
+<h2 id="section-10">4</h2>
 <ol style="list-style-type: decimal">
 <li>The consumer price index (1982–84 = 100) in December 1980 was 86.4, and it was 247.963 in December 2017.<span><label for="sn-6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="sidenote">Source: <a href="https://fred.stlouisfed.org/series/CPIAUCSL"><code>CPIAUCSL</code> from FRED</a>.<br />
 <br />
@@ -220,7 +305,7 @@
 </span></span> Did the price of gasoline increase or decrease in real terms over this period? By what percentage has the price of gasoline changed (in real terms) over this period? What is the implied average annual rate of growth or decline in the real price over this period?</li>
 <li>In 1980 the federal minimum wage was $3.10 per hour; today it is $7.25. Has its real value increased or decreased over this period? What policy and managerial implications does this have?</li>
 </ol>
-<h2 id="section-4">5</h2>
+<h2 id="section-11">5</h2>
 <p>Download one of these datasets<span><label for="sn-8" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="sidenote">Source: <a href="https://fred.stlouisfed.org/">FRED</a>. <a href="/class/02-class/#economic-indicators">See the R code I used to download and process this data</a>.<br />
 <br />
 </span></span> (they’re identical; one is an Excel file, one is a CSV file, which is easier to work with in R):</p>
@@ -297,6 +382,20 @@
     </footer>
 
     
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      },
+      "HTML-CSS": {
+        fonts: ["Asana-Math"]
+      }
+    });
+    </script>
+    <script async type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+    </script>
+
 
 </div>
 </body>

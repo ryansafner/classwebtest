@@ -23,6 +23,7 @@ lessons:
   - title: "Data Visualization with ggplot2"
     date: "September 5 (Th)"
     slides: "04-slides"
+    assignment: "01-problem-set"
 
   - title: "Data Wrangling in the tidyverse"
     date: "September 10 (Tu)"

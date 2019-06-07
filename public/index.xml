@@ -49,10 +49,7 @@
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/assignment/01-problem-set/</guid>
-      <description>Answer Key  Submit this as a PDF on Learning Suite. Show your work when possible.
-1 Download one of these datasetsSource: Global Consumption and Income Project. All incomes expressed in 2005 USD PPP.
- (they’re identical; one is an Excel file, one is a CSV file, which is easier to work with in R):
-  gcip_raw.xlsx  gcip_raw.csv  Choose five countries you are interested in.</description>
+      <description>Download .Rmd  Answer Key  For this homework, you may type up or handwrite the answers to each question. When you get to the R questions at the end, please attach a copy of your .R file (with comments!) of commands for each relevant question. For future homeworks, I will demonstrate how you can complete everything using R Markdown, but you will not be obligated to do so.</description>
     </item>
     
     <item>
