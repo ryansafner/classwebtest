@@ -101,6 +101,15 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
+      <title>Appendix for Class 7</title>
+      <link>https://classtest.ryansafner.com/appendix/07-appendix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/appendix/07-appendix/</guid>
+      <description>a.sourceLine { display: inline-block; line-height: 1.25; } a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; } a.sourceLine:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } a.sourceLine { text-indent: -1em; padding-left: 1em; } } pre.</description>
+    </item>
+    
+    <item>
       <title>Assignments</title>
       <link>https://classtest.ryansafner.com/assignments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -128,7 +137,8 @@ To encourage attendance and preparation, I’m borrowing and adapting Dr. Thomp
       
       <guid>https://classtest.ryansafner.com/schedule/</guid>
       <description> Here’s your roadmap for the semester!
-  Readings should be completed before each class session  Assignments are due by 11:59 PM on the day they are due  Class materials (slides, in-class activities, etc.) will be added on the day of class  R work     Diving Right In with R Reading Slides Appendix Assignment R    Preliminary Survey        August 27 (Tu) Introduction to Econometrics        August 29 (Th) The Quest for Causality        September 3 (Tu) Meet R        September 5 (Th) Data Visualization with ggplot2        September 10 (Tu) Data Wrangling in the tidyverse        September 12 (Th) Random Variables and Distributions         Linear Regression Reading Slides Appendix Assignment R   September 17 (Tu) OLS Linear Regression        September 19 (Th) Goodness of Fit, Bias, and Precision        September 23 (Th) Regression Diagnostics         Inferential Statistics         Inference for Regression with infer        February 15 (F)  Midterm Exam        February 18 (M) No class; Presidents&amp;rsquo; Day         Extensions to Regression Reading Slides Appendix Assignment R    Omitted Variable Bias         Multivariate OLS Estimators         Model Specification Strategies         How to Write an Empirical Paper         Dummy Variables         Categories and Interactions         Polynomial Models         Logarithmic Models         Panel Data and Fixed Effects Models         Difference in Difference Models         Instrumental Variables Models         Regression Discontinuity Models         Binary Dependent Variables Models         Final Reading Slides Appendix Assignment R   April 23 (T) Final project due (submit online by 11:59 PM)         </description>
+  Readings include textbook chapters and occasional journal articles  Assignments are due by 11:59 PM on the designated day  Class materials (slides, in-class activities, etc.) will be added on the day of class  Slides are “Xaringan” presentations in html that can be opened in any browserFile &amp;gt; Print &amp;gt; Save as PDF if you wish to download them
+  Appendices contain extra explanations, math/statistical properties &amp;amp; proofs, and other helpful resources to keep the slides nice and de-cluttered  R work     Diving Right In with R Reading Slides Appendix Assignment R    Preliminary Survey        August 27 (Tu) Introduction to Econometrics        August 29 (Th) The Quest for Causality        September 3 (Tu) Meet R        September 5 (Th) Data Visualization with ggplot2        September 10 (Tu) Data Wrangling in the tidyverse        September 12 (Th) Random Variables and Distributions         Linear Regression Reading Slides Appendix Assignment R   September 17 (Tu) OLS Linear Regression        September 19 (Th) Goodness of Fit, Bias, and Precision        September 23 (Th) Regression Diagnostics         Inferential Statistics         Inference for Regression with infer        February 15 (F)  Midterm Exam        February 18 (M) No class; Presidents&amp;rsquo; Day         Extensions to Regression Reading Slides Appendix Assignment R    Omitted Variable Bias         Multivariate OLS Estimators         Model Specification Strategies         How to Write an Empirical Paper         Dummy Variables         Categories and Interactions         Polynomial Models         Logarithmic Models         Panel Data and Fixed Effects Models         Difference in Difference Models         Instrumental Variables Models         Regression Discontinuity Models         Binary Dependent Variables Models         Final Reading Slides Appendix Assignment R   April 23 (T) Final project due (submit online by 11:59 PM)         </description>
     </item>
     
     <item>

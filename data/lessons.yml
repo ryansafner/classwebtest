@@ -37,6 +37,7 @@ lessons:
 
   - title: "OLS Linear Regression"
     date: "September 17 (Tu)"
+    appendix: "07-appendix"
 
   - title: "Goodness of Fit, Bias, and Precision"
     date: "September 19 (Th)"
