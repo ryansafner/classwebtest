@@ -1,5 +1,5 @@
 ---
-title: "Appendix for Class 7"
+title: "Class 7: Linear Regression"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl

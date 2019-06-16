@@ -7,7 +7,7 @@ lessons:
     
   - title: "Introduction to Econometrics"
     date: "August 27 (Tu)"
-    appendix: "01-appendix"
+    class: "01-class"
     slides: "01-slides"
     r: "01-r"
 
@@ -18,7 +18,7 @@ lessons:
   - title: "Meet R"
     date: "September 3 (Tu)"
     slides: "03-slides"
-    appendix: "03-appendix"
+    class: "03-class"
 
   - title: "Data Visualization with ggplot2"
     date: "September 5 (Th)"
@@ -37,7 +37,7 @@ lessons:
 
   - title: "OLS Linear Regression"
     date: "September 17 (Tu)"
-    appendix: "07-appendix"
+    class: "07-class"
 
   - title: "Goodness of Fit, Bias, and Precision"
     date: "September 19 (Th)"

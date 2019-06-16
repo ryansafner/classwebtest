@@ -10,8 +10,8 @@
             {{- if .header }}
 
             <td style="width:10%;text-align:center" class="mid-table-header">Reading</td>
+            <td style="width:10%;text-align:center" class="mid-table-header">Class</td>
             <td style="width:10%;text-align:center" class="mid-table-header">Slides</td>
-            <td style="width:10%;text-align:center" class="mid-table-header">Appendix</td>
             <td style="width:10%;text-align:center" class="mid-table-header">Assignment</td>
             <td style="width:10%;text-align:center" class="mid-table-header">R</td>
             {{- else }}
@@ -24,20 +24,20 @@
                 <i class="fas fa-book-reader fa-lg"></i></font></td>
             {{- end }}
 
+            {{- if .class }}
+            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/class/{{ .class }}/">
+                <i class="fas fa-info-circle"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
+                <i class="fas fa-info-circle"></i></i></font></td>
+            {{- end }}
+
             {{- if .slides }}
             <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/slides/{{ .slides }}/">
                 <i class="fas fa-chalkboard-teacher"></i></a></td>
             {{- else }}
             <td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
                 <i class="fas fa-chalkboard-teacher"></i></font></td>
-            {{- end }}
-
-            {{- if .appendix }}
-            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/appendix/{{ .appendix }}/">
-                <i class="fas fa-info-circle"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
-                <i class="fas fa-info-circle"></i></i></font></td>
             {{- end }}
 
             {{- if .assignment }}

@@ -24,13 +24,13 @@ source(here("lib", "graphics.R"))
 
 Packages come from multiple sources. 
 
-The polished, publicly released versions are found on [CRAN](https://cran.r-project.org/). When installing a package available on CRAN, it is sufficient simply to tell `R` the following:^[Note the plural `s` on `packages`, and the quotes around the "package name"]
+The polished, publicly released versions are found on [CRAN](https://cran.r-project.org/). When installing a package available on CRAN, it is sufficient simply to tell R the following:^[Note the plural `s` on `packages`, and the quotes around the "package name"]
 
 ```{r, eval=F}
 install.packages("packagename") 
 ```
 
-Other packages, which may be in various developmental states (including perfectly functional!) are often hosted on GitHub before they make their way onto CRAN. Simply telling `R` `install.packages("packagename")` will fail to find it (as R only looks in CRAN for packages), so you must use another package called `devtools`^[Which you will need to install first if you (probably) don't already have it!] to install packages directly from Github:^[Note the `::` allows you to use the function `install_github()` from the `devtools` package without having to first load the devtools package with `library(devtools)`.]
+Other packages, which may be in various developmental states (including perfectly functional!) are often hosted on [GitHub](http://github.com) before they make their way onto CRAN. Simply telling R `install.packages("packagename")` will fail to find it (as R only looks in CRAN for packages), so you must use another package called `devtools`^[Which you will need to install first if you (probably) don't already have it!] to install packages directly from Github:^[Note the `::` allows you to use the function `install_github()` from the `devtools` package without having to first load the devtools package with `library(devtools)`.]
 
 ```{r, eval=F}
 devtools::install_github("username/packagename") 
@@ -65,7 +65,7 @@ Math in R Markdown uses the $\LaTeX{}$ language to typeset beautiful formulas an
 
 If you prefer it to be centered in its own line, put it on its own line, `$$`between two dollar signs`$$`. 
 
-`$$2^2+\frac{\pi}{\pi}=5$$` becomes:
+`$``$``2^2+\frac{\pi}{\pi}=5``$``$`` becomes:
 
 $$2^2+\frac{\pi}{\pi}=5$$ 
 

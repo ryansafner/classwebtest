@@ -1,5 +1,5 @@
 ---
-title: "Appendix for Class 1"
+title: "Class 1: Introduction to Econometrics"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl

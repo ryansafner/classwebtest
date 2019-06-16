@@ -227,11 +227,11 @@ code span.wa { color: #bf0303; } /* Warning */
 </ol>
 <h2 id="r-packages">R Packages</h2>
 <p>Packages come from multiple sources.</p>
-<p>The polished, publicly released versions are found on <a href="https://cran.r-project.org/">CRAN</a>. When installing a package available on CRAN, it is sufficient simply to tell <code>R</code> the following:<span><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">Note the plural <code>s</code> on <code>packages</code>, and the quotes around the “package name”<br />
+<p>The polished, publicly released versions are found on <a href="https://cran.r-project.org/">CRAN</a>. When installing a package available on CRAN, it is sufficient simply to tell R the following:<span><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">Note the plural <code>s</code> on <code>packages</code>, and the quotes around the “package name”<br />
 <br />
 </span></span></p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;packagename&quot;</span>) </code></pre>
-<p>Other packages, which may be in various developmental states (including perfectly functional!) are often hosted on GitHub before they make their way onto CRAN. Simply telling <code>R</code> <code>install.packages("packagename")</code> will fail to find it (as R only looks in CRAN for packages), so you must use another package called <code>devtools</code><span><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Which you will need to install first if you (probably) don’t already have it!<br />
+<p>Other packages, which may be in various developmental states (including perfectly functional!) are often hosted on <a href="http://github.com">GitHub</a> before they make their way onto CRAN. Simply telling R <code>install.packages("packagename")</code> will fail to find it (as R only looks in CRAN for packages), so you must use another package called <code>devtools</code><span><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Which you will need to install first if you (probably) don’t already have it!<br />
 <br />
 </span></span> to install packages directly from Github:<span><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">Note the <code>::</code> allows you to use the function <code>install_github()</code> from the <code>devtools</code> package without having to first load the devtools package with <code>library(devtools)</code>.<br />
 <br />
@@ -253,7 +253,7 @@ code span.wa { color: #bf0303; } /* Warning */
 <br />
 </span></span>, insert it <code>$</code>between two dollar signs<code>$</code>. Within a sentence, <code>$2^2+\frac{\pi}{\pi}=5$</code> becomes <span class="math inline">\(2^2+\frac{\pi}{\pi}=5\)</span>.</p>
 <p>If you prefer it to be centered in its own line, put it on its own line, <code>$$</code>between two dollar signs<code>$$</code>.</p>
-<p><code>$$2^2+\frac{\pi}{\pi}=5$$</code> becomes:</p>
+<p>`<span class="math inline">\(``\)</span><code>2^2+\frac{\pi}{\pi}=5</code><span class="math inline">\(``\)</span>`` becomes:</p>
 <p><span class="math display">\[2^2+\frac{\pi}{\pi}=5\]</span></p>
 <p>There is also a shortcut with the R package <code>equatiomatic</code>.</p>
 <h3 id="producing-documents">Producing documents</h3>
