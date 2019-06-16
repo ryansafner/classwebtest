@@ -93,11 +93,11 @@ normal.pdf +
   stat_function(fun = shade95, geom="area", fill="#9ebcda", alpha=0.6)+
   stat_function(fun = shade68, geom="area", fill="#8856a7", alpha=0.6)+
   annotate("segment", x = -3, xend = 3, y = 0.15, yend = 0.15, colour = "#000000", size=0.5, linetype = 2, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
-  annotate("text", x = 0, y = 0.16, label = "68%", color="#000000")+
+  annotate("text", x = 0, y = 0.16, label = "99.7%", color="#000000")+
   annotate("segment", x = -2, xend = 2, y = 0.20, yend = 0.20, colour = "#000000", size=0.5, linetype = 2, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
   annotate("text", x = 0, y = 0.21, label = "95%", color="#000000")+
   annotate("segment", x = -1, xend = 1, y = 0.25, yend = 0.25, colour = "#000000", size=0.5, linetype = 2, alpha=1, arrow=arrow(length=unit(0.25,"cm"), ends="both", type="closed"))+
-  annotate("text", x = 0, y = 0.26, label = "99.7%", color="#000000")
+  annotate("text", x = 0, y = 0.26, label = "68%", color="#000000")
 ```
 
 Again, we can *standardize* any normally-distributed random variable by finding the **Z-score** of each observation:
@@ -108,7 +108,7 @@ This ensures the mean will be 0 and standard deviation will be 1. Thus, $Z$ is t
 
 We can use $Z$-scores to find the probability of any range of observations of $X$ occuring in the distribution.
 
-```{r}
+```{r, echo = TRUE}
 pnorm(-2, mean = 0, sd = 1, lower.tail = TRUE) # area to left of -2
 pnorm(2, mean = 0, sd = 1, lower.tail = TRUE) # area to left of 2
 pnorm(2, mean = 0, sd = 1, lower.tail = FALSE) # area to RIGHT of 2
