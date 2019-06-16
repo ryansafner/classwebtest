@@ -6,19 +6,35 @@
     <description>Recent content in Classes on Econometrics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://classtest.ryansafner.com/class/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Introduction</title>
+      <title>Class 10: Inferential Statistics</title>
+      <link>https://classtest.ryansafner.com/class/10-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/class/10-class/</guid>
+      <description>a.sourceLine { display: inline-block; line-height: 1.25; } a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; } a.sourceLine:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } a.sourceLine { text-indent: -1em; padding-left: 1em; } } pre.</description>
+    </item>
+    
+    <item>
+      <title>Class 1: Introduction to Econometrics</title>
       <link>https://classtest.ryansafner.com/class/01-class/</link>
-      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/class/01-class/</guid>
-      <description> Contents  Slides Pit market   Slides Download the slides from today’s lecture.
-   Pit market </description>
+      <description>Contents  The Summation Operator Definition Useful Properties of Summation Operators Advanced: Useful Properties for Regression    The Summation Operator Definition Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter \(\Sigma\) –“sigma”) as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics.</description>
+    </item>
+    
+    <item>
+      <title>Class 7: Linear Regression</title>
+      <link>https://classtest.ryansafner.com/class/07-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/class/07-class/</guid>
+      <description>a.sourceLine { display: inline-block; line-height: 1.25; } a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; } a.sourceLine:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } a.sourceLine { text-indent: -1em; padding-left: 1em; } } pre.</description>
     </item>
     
   </channel>

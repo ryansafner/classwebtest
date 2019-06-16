@@ -73,19 +73,6 @@
   </url>
   
   <url>
-    <loc>https://classtest.ryansafner.com/appendix/01-appendix/</loc>
-  </url>
-  
-  <url>
-    <loc>https://classtest.ryansafner.com/appendix/07-appendix/</loc>
-  </url>
-  
-  <url>
-    <loc>https://classtest.ryansafner.com/appendix/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://classtest.ryansafner.com/assignment/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -93,6 +80,23 @@
   
   <url>
     <loc>https://classtest.ryansafner.com/assignments/</loc>
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/class/10-class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/class/01-class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/class/07-class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://classtest.ryansafner.com/class/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
