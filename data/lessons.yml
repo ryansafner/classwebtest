@@ -46,6 +46,7 @@ lessons:
     date: "September 23 (Th)"
 
   - title: "Inferential Statistics"
+    class: "10-class"
 
   - title: "Inference for Regression with infer"
 

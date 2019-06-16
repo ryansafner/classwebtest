@@ -12,72 +12,6 @@ editor_options:
 ---
 
 <!-- BLOGDOWN-HEAD -->
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    background-color: #ffffff;
-    color: #a0a0a0;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-left: 4px; }
-div.sourceCode
-  { color: #1f1c1b; background-color: #ffffff; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span. { color: #1f1c1b; } /* Normal */
-code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
-code span.an { color: #ca60ca; } /* Annotation */
-code span.at { color: #0057ae; } /* Attribute */
-code span.bn { color: #b08000; } /* BaseN */
-code span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
-code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #924c9d; } /* Char */
-code span.cn { color: #aa5500; } /* Constant */
-code span.co { color: #898887; } /* Comment */
-code span.cv { color: #0095ff; } /* CommentVar */
-code span.do { color: #607880; } /* Documentation */
-code span.dt { color: #0057ae; } /* DataType */
-code span.dv { color: #b08000; } /* DecVal */
-code span.er { color: #bf0303; text-decoration: underline; } /* Error */
-code span.ex { color: #0095ff; font-weight: bold; } /* Extension */
-code span.fl { color: #b08000; } /* Float */
-code span.fu { color: #644a9b; } /* Function */
-code span.im { color: #ff5500; } /* Import */
-code span.in { color: #b08000; } /* Information */
-code span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
-code span.op { color: #1f1c1b; } /* Operator */
-code span.ot { color: #006e28; } /* Other */
-code span.pp { color: #006e28; } /* Preprocessor */
-code span.re { color: #0057ae; background-color: #e0e9f8; } /* RegionMarker */
-code span.sc { color: #3daee9; } /* SpecialChar */
-code span.ss { color: #ff5500; } /* SpecialString */
-code span.st { color: #bf0303; } /* String */
-code span.va { color: #0057ae; } /* Variable */
-code span.vs { color: #bf0303; } /* VerbatimString */
-code span.wa { color: #bf0303; } /* Warning */
-</style>
 <!-- /BLOGDOWN-HEAD -->
 
 <h2>Contents</h2>
@@ -106,34 +40,6 @@ code span.wa { color: #bf0303; } /* Warning */
 <h4 id="prerequisites">Prerequisites</h4>
 <p>It is important to remember several statistical distributions, tools, and facts. Most of them have to do with the <strong>normal distribution</strong>. If <span class="math inline">\(X\)</span> is normally distributed with mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>:</p>
 <p><span class="math display">\[X \sim N(\mu, \sigma)\]</span></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ───────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
-<pre><code>## ✔ ggplot2 3.2.0.9000     ✔ purrr   0.3.2     
-## ✔ tibble  2.1.3          ✔ dplyr   0.8.1     
-## ✔ tidyr   0.8.3          ✔ stringr 1.4.0     
-## ✔ readr   1.3.1          ✔ forcats 0.3.0</code></pre>
-<pre><code>## Warning: package &#39;tibble&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package &#39;purrr&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package &#39;stringr&#39; was built under R version 3.5.2</code></pre>
-<pre><code>## ── Conflicts ──────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># plot a theoretical normal distribution without any data</span>
-
-<span class="co"># our &quot;geom&quot; here is the &quot;stat_function()&quot; command, which draws statistical functions</span>
-
-normal.pdf &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> <span class="kw">data.frame</span>(<span class="dt">x =</span> <span class="dv">-4</span><span class="op">:</span><span class="dv">4</span>), <span class="co"># our &quot;data&quot; is just a sequence of x from -4 to 4</span>
-                     <span class="kw">aes</span>(<span class="dt">x =</span> x))<span class="op">+</span>
-<span class="st">  </span><span class="kw">stat_function</span>(<span class="dt">fun =</span> dnorm, <span class="co"># dnorm is the normal distributions</span>
-                <span class="dt">args =</span> <span class="kw">list</span>(<span class="dt">mean =</span> <span class="dv">0</span>, <span class="dt">sd =</span> <span class="dv">1</span>), <span class="co"># set mean = 0 and sd = 1</span>
-                <span class="dt">color=</span><span class="st">&quot;blue&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="op">-</span><span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">1</span>))<span class="op">+</span>
-<span class="st">    </span><span class="kw">xlab</span>(<span class="st">&quot;X (or Z-score)&quot;</span>)<span class="op">+</span><span class="kw">ylab</span>(<span class="st">&quot;p(X)&quot;</span>)<span class="op">+</span>
-<span class="st">  </span><span class="kw">theme_light</span>()
-
-normal.pdf</code></pre>
 <p><img src="/class/10-class_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>Then recall the <strong>68-95-99.7 empirical rule</strong>, that:</p>
 <ul>
@@ -148,13 +54,9 @@ normal.pdf</code></pre>
 <p><span class="math display">\[Z=\frac{X_i - \mu}{\sigma}\]</span></p>
 <p>This ensures the mean will be 0 and standard deviation will be 1. Thus, <span class="math inline">\(Z\)</span> is the number of standard deviations above <span class="math inline">\((+)\)</span> or below <span class="math inline">\((-)\)</span> the mean an observation is.</p>
 <p>We can use <span class="math inline">\(Z\)</span>-scores to find the probability of any range of observations of <span class="math inline">\(X\)</span> occuring in the distribution.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pnorm</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dt">mean =</span> <span class="dv">0</span>, <span class="dt">sd =</span> <span class="dv">1</span>, <span class="dt">lower.tail =</span> <span class="ot">TRUE</span>) <span class="co"># area to left of -2</span></code></pre>
 <pre><code>## [1] 0.02275013</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pnorm</span>(<span class="dv">2</span>, <span class="dt">mean =</span> <span class="dv">0</span>, <span class="dt">sd =</span> <span class="dv">1</span>, <span class="dt">lower.tail =</span> <span class="ot">TRUE</span>) <span class="co"># area to left of 2</span></code></pre>
 <pre><code>## [1] 0.9772499</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pnorm</span>(<span class="dv">2</span>, <span class="dt">mean =</span> <span class="dv">0</span>, <span class="dt">sd =</span> <span class="dv">1</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>) <span class="co"># area to RIGHT of 2</span></code></pre>
 <pre><code>## [1] 0.02275013</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pnorm</span>(<span class="dv">2</span>, <span class="dt">mean =</span> <span class="dv">0</span>, <span class="dt">sd =</span> <span class="dv">1</span>, <span class="dt">lower.tail =</span> <span class="ot">TRUE</span>)<span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dt">mean =</span> <span class="dv">0</span>, <span class="dt">sd =</span> <span class="dv">1</span>, <span class="dt">lower.tail =</span> <span class="ot">TRUE</span>) <span class="co"># area between -2 and 2</span></code></pre>
 <pre><code>## [1] 0.9544997</code></pre>
 <h4 id="the-central-limit-theorem">The Central Limit Theorem</h4>
 <p>Inferential statistics can be summarized in 2 sentences:</p>
@@ -193,7 +95,6 @@ normal.pdf</code></pre>
 <br />
 </span></span></p>
 <p><span class="math display">\[t \sim t_{n-1}\]</span></p>
-<pre><code>## Loading required package: viridisLite</code></pre>
 <p><img src="/class/10-class_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>The standard <span class="math inline">\(t\)</span>-distribution looks normal-ish, with a mean of 0, but with more area in the tails of the distribution. The exact shape depends on the degrees of freedom <span class="math inline">\((n-1)\)</span>. As <span class="math inline">\(\uparrow n\)</span>, <span class="math inline">\(\uparrow df\)</span>, the <span class="math inline">\(t\)</span>-distribution approximates a normal distribution.</p>
 <p>By convention, in regression we <em>always</em> use <span class="math inline">\(t\)</span>-distributions for confidence intervals and hypothesis tests. For nearly all of the confidence intervals and hypothesis tests below, we functionally replace <span class="math inline">\(Z\)</span> with <span class="math inline">\(t\)</span>.</p>
@@ -217,14 +118,6 @@ normal.pdf</code></pre>
 <br />
 </span></span> We need to find what are called the <strong>“critical values”</strong> of <span class="math inline">\(Z\)</span>, which we will call <span class="math inline">\(Z_{0.5\alpha}\)</span> on the normal distribution that puts (<span class="math inline">\(1-\alpha\)</span>) probability between <span class="math inline">\(\pm Z_{0.5\alpha}\)</span> and <span class="math inline">\(0.5\alpha\)</span> in each of the tails of the distribution. The distribution would look like this:</p></li>
 </ol>
-<pre><code>## Warning in is.na(x): is.na() applied to non-(list or vector) of type
-## &#39;expression&#39;
-
-## Warning in is.na(x): is.na() applied to non-(list or vector) of type
-## &#39;expression&#39;
-
-## Warning in is.na(x): is.na() applied to non-(list or vector) of type
-## &#39;expression&#39;</code></pre>
 <p><img src="/class/10-class_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <ul>
 <li>The confidence interval between the two <span class="math inline">\(Z\)</span>-scores <span class="math inline">\(-Z_{0.5\alpha}\)</span> and <span class="math inline">\(Z_{0.5\alpha}\)</span> contains the desired <span class="math inline">\((1-\alpha)%\)</span> of observations</li>
