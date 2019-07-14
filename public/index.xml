@@ -17,19 +17,18 @@
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/reading/01-reading/</guid>
-      <description>Required   Chapter 1 in Naked EconomicsCharles Wheelan, Naked Economics: Undressing the Dismal Science, 2nd ed. (New York: W. W. Norton &amp;amp; Company, 2010).
+      <description>--- title: &#34;Capitalism I&#34; date: &#34;2019-01-07&#34; citeproc: false bibliography: ../../static/bib/references.bib csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl --- Required   Chapter 1 in Naked EconomicsCharles Wheelan, Naked Economics: Undressing the Dismal Science, 2nd ed. (New York: W. W. Norton &amp;amp; Company, 2010).
   Introduction and 1.1–1.5 in Economy, Society, and Public PolicyThe CORE Team, Economy, Society, and Public Policy, 2019, https://www.core-econ.org/espp/.
-  Larry Elliott, “Heretics welcome! Economics needs a new Reformation”  “Dismal ignorance of the “dismal science”—a response to Larry Elliot&#34;  Tom Nichols, “How We Killed Expertise (And why we need it back.</description>
+  Larry Elliott, “Heretics welcome! Economics needs a new Reformation”  “Dismal ignorance of the “dismal science”—a response to Larry Elliot&#34;</description>
     </item>
     
     <item>
-      <title>Introduction</title>
-      <link>https://classtest.ryansafner.com/r/01-r/</link>
+      <title>R Practice 1</title>
+      <link>https://classtest.ryansafner.com/r/03-r/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://classtest.ryansafner.com/r/01-r/</guid>
-      <description> Contents  Slides Pit market   Slides Download the slides from today’s lecture.
-   Pit market </description>
+      <guid>https://classtest.ryansafner.com/r/03-r/</guid>
+      <description>Contents  Getting Set Up Creating Objects Playing with a Data Set Execute your R Script     Download .Rmd  Answer Key  For this homework, you may type up or handwrite the answers to each question. When you get to the R questions at the end, please attach a copy of your .R file (with comments!) of commands for each relevant question. For future homeworks, I will demonstrate how you can complete everything using R Markdown, but you will not be obligated to do so.</description>
     </item>
     
     <item>
@@ -145,9 +144,9 @@ To encourage attendance and preparation, I’m borrowing and adapting Dr. Thomp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://classtest.ryansafner.com/schedule/</guid>
-      <description> Here’s your roadmap for the semester!
-  Readings include textbook chapters and occasional journal articles  Assignments are due by 11:59 PM on the designated day  Class materials (slides, in-class activities, etc.) will be added on the day of class  Slides are “Xaringan” presentations in html that can be opened in any browserFile &amp;gt; Print &amp;gt; Save as PDF if you wish to download them
-  Appendices contain extra explanations, math/statistical properties &amp;amp; proofs, and other helpful resources to keep the slides nice and de-cluttered  R work     Diving Right In with R Reading Class Slides Assignment R    Preliminary Survey        August 27 (Tu) Introduction to Econometrics        August 29 (Th) The Quest for Causality        September 3 (Tu) Meet R        September 5 (Th) Data Visualization with ggplot2        September 10 (Tu) Data Wrangling in the tidyverse        September 12 (Th) Random Variables and Distributions         Linear Regression Reading Class Slides Assignment R   September 17 (Tu) OLS Linear Regression        September 19 (Th) Goodness of Fit, Bias, and Precision        September 23 (Th) Regression Diagnostics         Inferential Statistics         Inference for Regression with infer        February 15 (F)  Midterm Exam        February 18 (M) No class; Presidents&amp;rsquo; Day         Extensions to Regression Reading Class Slides Assignment R    Omitted Variable Bias         Multivariate OLS Estimators         Model Specification Strategies         How to Write an Empirical Paper         Dummy Variables         Categories and Interactions         Polynomial Models         Logarithmic Models         Panel Data and Fixed Effects Models         Difference in Difference Models         Instrumental Variables Models         Regression Discontinuity Models         Binary Dependent Variables Models         Final Reading Class Slides Assignment R   April 23 (T) Final project due (submit online by 11:59 PM)         </description>
+      <description>Here’s your roadmap for the semester!
+  Readings include textbook chapters and occasional journal articles  Assignments are due by the beginning of class unless otherwise stated  Class materials contain extra explanations, math/statistical properties &amp;amp; proofs, and other helpful resourcesThese “online appendices” keep the slides nice and de-cluttered!
+  Slides are “Xaringan” presentations in html that can be opened in any browserFile &amp;gt; Print &amp;gt; Save as PDF if you wish to download them</description>
     </item>
     
     <item>

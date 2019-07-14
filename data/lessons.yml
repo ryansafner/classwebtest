@@ -1,5 +1,5 @@
 lessons:
-  - title: '<span class="fake-header-table">Diving Right In with R</span>'
+  - title: '<span class="fake-header-table">Data Analysis in R</span>'
     header: True
 
   - title: "Preliminary Survey"
@@ -9,7 +9,6 @@ lessons:
     date: "August 27 (Tu)"
     class: "01-class"
     slides: "01-slides"
-    r: "01-r"
 
   - title: "The Quest for Causality"
     date: "August 29 (Th)"
@@ -19,7 +18,8 @@ lessons:
     date: "September 3 (Tu)"
     slides: "03-slides"
     class: "03-class"
-
+    r: "03-r"
+    
   - title: "Data Visualization with ggplot2"
     date: "September 5 (Th)"
     slides: "04-slides"
@@ -75,10 +75,16 @@ lessons:
   
   - title: "Logarithmic Models"
   
+  - title: '<span class="fake-header-table">Panel Data Models</span>'
+    header: True
+
   - title: "Panel Data and Fixed Effects Models"
   
   - title: "Difference in Difference Models"
-  
+
+  - title: '<span class="fake-header-table">Advanced Regression</span>'
+    header: True
+    
   - title: "Instrumental Variables Models"
   
   - title: "Regression Discontinuity Models"

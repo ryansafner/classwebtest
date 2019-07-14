@@ -1,0 +1,154 @@
+---
+title: "R Practice 1"
+date: "2019-01-07"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<h2>Contents</h2>
+<div id="TOC">
+<ul>
+<li><a href="#getting-set-up">Getting Set Up</a></li>
+<li><a href="#creating-objects">Creating Objects</a></li>
+<li><a href="#playing-with-a-data-set">Playing with a Data Set</a></li>
+<li><a href="#execute-your-r-script">Execute your R Script</a></li>
+</ul>
+</div>
+
+<ul>
+<li><a href="/files/markdown/rpractice1.Rmd"><i class="fab fa-markdown"></i> <code>Download .Rmd</code></a></li>
+<li><a href="/files/answers/rpractice1answers.html"><i class="far fa-life-ring"></i> <code>Answer Key</code></a></li>
+</ul>
+<p>For this homework, you may type up or handwrite the answers to each question. When you get to the <em>R</em> questions at the end, please attach a copy of your <em>.R</em> file (with comments!) of commands for each relevant question. For future homeworks, I will demonstrate how you can complete everything using <em>R Markdown</em>, but you will not be obligated to do so.</p>
+<h3 id="getting-set-up">Getting Set Up</h3>
+<p>Before we begin, start a new file with  <span class="math inline">\(\rightarrow\)</span>  <span class="math inline">\(\rightarrow\)</span> . As you work through this sheet in the console in <code>R</code>, also add (copy/paste) your commands that work into this new file. At the end, save it, and run to execute all of your commands at once.</p>
+<h3 id="creating-objects">Creating Objects</h3>
+<h4 id="section">1.</h4>
+<p>Create a vector called “me” with two objects, your first name, and your last name. Then call the vector to inspect it. Confirm it is a character class vector.</p>
+<h4 id="section-1">2.</h4>
+<p>Create a vector called “x” with all the even integers from 2 to 10.</p>
+<h4 id="section-2">3.</h4>
+<p>Find the mean of x with <code>mean()</code></p>
+<h4 id="section-3">4.</h4>
+<p>Now take the following pdf of random variable <span class="math inline">\(Y\)</span>:</p>
+<pre><code>## ── Attaching packages ───────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ✔ ggplot2 3.2.0.9000     ✔ purrr   0.3.2     
+## ✔ tibble  2.1.3          ✔ dplyr   0.8.1     
+## ✔ tidyr   0.8.3          ✔ stringr 1.4.0     
+## ✔ readr   1.3.1          ✔ forcats 0.3.0</code></pre>
+<pre><code>## Warning: package &#39;tibble&#39; was built under R version 3.5.2</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.5.2</code></pre>
+<pre><code>## Warning: package &#39;purrr&#39; was built under R version 3.5.2</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.5.2</code></pre>
+<pre><code>## Warning: package &#39;stringr&#39; was built under R version 3.5.2</code></pre>
+<pre><code>## ── Conflicts ──────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">
+y
+</th>
+<th style="text-align:right;">
+p(y)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0.50
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0.25
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0.25
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate the standard deviation “manually” using our table method. You can look at the source code of Lecture 4 for my example.</p>
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>Create two vectors, one called <span class="math inline">\(y.i\)</span> and one called <span class="math inline">\(p.i\)</span>, with the data above.</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>Merge them into a data frame called <span class="math inline">\(rv\)</span> with <code>data.frame(y_i,p_i)</code>. Call <code>rv</code> to inspect it.</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-alpha">
+<li>Find the expected value of <span class="math inline">\(Y\)</span> by taking the sum of each value of <code>y.i</code> multiplied by <code>p.i</code> with the <code>sum()</code> command.</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: lower-alpha">
+<li>Create a new column in <code>rv</code> called <code>deviations</code>, where you subtract the mean from each <code>y.i</code> value. Call <code>rv</code> again to make sure it’s now there.</li>
+</ol></li>
+<li><ol start="5" style="list-style-type: lower-alpha">
+<li>Create another column in <code>rv</code> called <code>devsq</code>, where you square the deviations from part d. Call <code>rv</code> again to make sure it’s now there.</li>
+</ol></li>
+<li><ol start="6" style="list-style-type: lower-alpha">
+<li>Now add another column in <code>rv</code> called <code>weighteddevsq</code>, where you multiply the squared deviations in part e. by the associated probability <code>p.i</code>. Call <code>rv</code> again to make sure it’s now there.</li>
+</ol></li>
+<li><ol start="7" style="list-style-type: lower-alpha">
+<li>Finally, take the sum of <code>weighteddevsq</code> to get variance. Square root this to get standard deviation.</li>
+</ol></li>
+</ul>
+<h4 id="section-4">5.</h4>
+<p>The mean height of adults is 65 inches, with a standard deviation of 4 inches. Use the normal distribution to find the probabilities of the following scenarios:</p>
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>Find the probability of someone being <em>at least</em> 60 inches tall using <code>pnorm()</code>.</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>Find the probability of someone being <em>at most</em> 60 inches tall.</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-alpha">
+<li>Find the probability of someone being between 61 and 69 inches tall. Why is this number familiar?</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: lower-alpha">
+<li>Find the probability of someone being between 57 and 73 inches tall. Why is this number familiar?</li>
+</ol></li>
+</ul>
+<h3 id="playing-with-a-data-set">Playing with a Data Set</h3>
+<p>For the following questions, use the <code>diamonds</code> dataset, included as part of <code>ggplot2</code>.</p>
+<h4 id="section-5">6.</h4>
+<p>Install <code>ggplot2</code></p>
+<h4 id="section-6">7.</h4>
+<p>Load <code>ggplot2</code> with the <code>library()</code> command</p>
+<h4 id="section-7">8.</h4>
+<p>Get the structure of the diamonds data.frame. What are the different variables and what kind of data does each contain?</p>
+<h4 id="section-8">9.</h4>
+<p>Get summary statistics for <code>carat</code>, <code>depth</code>, <code>table</code>, and <code>price</code></p>
+<h4 id="section-9">10.</h4>
+<p><code>color</code>, <code>cut</code>, and <code>clarity</code> are categorical variables (factors). Use the <code>table()</code> command to generate frequency tables for each.</p>
+<h4 id="section-10">11.</h4>
+<p>Now rerun the <code>summary()</code> command on the entire data frame</p>
+<h4 id="section-11">12.</h4>
+<p>Plot a histogram of price.</p>
+<h4 id="section-12">13.</h4>
+<p>Plot a boxplot of price by diamond color.</p>
+<h3 id="execute-your-r-script">Execute your R Script</h3>
+<p>Save the R Script you created at the beginning and (hopefully) have been pasting all of your valid commands to. This creates a <em>.R</em> file wherever you choose to save it to. Now looking at the file in the upper left pane of <em>R Studio</em> look for the button in the upper right corner that says <strong>Run</strong>. Sit back and watch <code>R</code> redo everything you’ve carefully worked on, all at once.</p>

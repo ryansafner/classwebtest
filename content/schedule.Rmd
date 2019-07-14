@@ -5,12 +5,11 @@ slug: schedule
 
 Here's your roadmap for the semester!
 
-- <i class="fas fa-book-reader"></i> Readings include textbook chapters and occasional journal articles
-- <i class="fas fa-laptop-code"></i> Assignments are due by 11:59 PM on the designated day
-- <i class="fas fa-university"></i> Class materials (slides, in-class activities, etc.) will be added on the day of class
-- <i class="fas fa-chalkboard-teacher"></i> Slides are "Xaringan" presentations in html that can be opened in any browser^[`File > Print > Save as PDF` if you wish to download them]
-- <i class="fas fa-info-circle"></i> Appendices contain extra explanations, math/statistical properties & proofs, and other helpful resources to keep the slides nice and de-cluttered
-- <i class="fas fa-registered"></i> R work 
+- <i class="fas fa-book-reader"></i> **Readings** include textbook chapters and occasional journal articles
+- <i class="fas fa-laptop-code"></i> **Assignments** are due by the beginning of class unless otherwise stated
+- <i class="fas fa-info-circle"></i> **Class** materials contain extra explanations, math/statistical properties & proofs, and other helpful resources^[These "online appendices" keep the slides nice and de-cluttered!]
+- <i class="fas fa-chalkboard-teacher"></i> **Slides** are "Xaringan" presentations in html that can be opened in any browser^[`File > Print > Save as PDF` if you wish to download them]
+- <i class="fas fa-registered"></i> **R** materials contain extra tutorials, videos, practice exercises and answers on using R
 
 ---
 

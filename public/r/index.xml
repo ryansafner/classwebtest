@@ -12,13 +12,12 @@
     
     
     <item>
-      <title>Introduction</title>
-      <link>https://classtest.ryansafner.com/r/01-r/</link>
+      <title>R Practice 1</title>
+      <link>https://classtest.ryansafner.com/r/03-r/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://classtest.ryansafner.com/r/01-r/</guid>
-      <description> Contents  Slides Pit market   Slides Download the slides from today’s lecture.
-   Pit market </description>
+      <guid>https://classtest.ryansafner.com/r/03-r/</guid>
+      <description>Contents  Getting Set Up Creating Objects Playing with a Data Set Execute your R Script     Download .Rmd  Answer Key  For this homework, you may type up or handwrite the answers to each question. When you get to the R questions at the end, please attach a copy of your .R file (with comments!) of commands for each relevant question. For future homeworks, I will demonstrate how you can complete everything using R Markdown, but you will not be obligated to do so.</description>
     </item>
     
   </channel>
