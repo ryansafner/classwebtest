@@ -1,6 +1,6 @@
-# ECON 480: Econometrics
+# Course Websites
 
-This repository contains the code for generating [classtest.ryansafner.com](https://classtest.ryansafner.com/).
+This repository contains the code for generating [classtest.ryansafner.com](https://classtest.ryansafner.com/). This is a minimal template for making my course websites, e.g. [metricsf19.courses.ryansafner.com](http://metricsf19.courses.ryansafner.com) and [microf19.courses.ryansafner.com](http://microf19.courses.ryansafner.com), and is designed to be ported to make other course websites quickly.
 
 This is heavily borrowed from the beautiful course websites of [Andrew Heiss](https://andrewheiss.com), including his [`ath-tufte-hugo_18-19` theme](https://github.com/andrewheiss/ath-tufte-hugo_18-19).
 
@@ -18,7 +18,9 @@ You will need a git client, GitHub account, and link your GitHub account to `R S
 6. Start a `New Project` in `R Studio` from `Existing Directory` and then point it to the directory from Step 3. 
 7. Edit your `*gitignore` file by adding a line with: `public/` so that it will work with Netlify ([here's why](https://bookdown.org/yihui/blogdown/version-control.html))
 8. Build your website with ` blogdown::new_site()` in the `R Studio` console
-9. Copy/paste my barebones course template
+9. Copy/paste all the following files and folders from this repo into your new folder: `content/`, `data/`, `lib/`, `pandoc/`, `public/`, `static/`, `themes/`, `config.yaml`, `index.Rmd` (optional: `README.md` and `favicon.ico`)
+    - That is, DON'T copy the `.git` folder, `.Rproj.user` folder, `.gitignore`, `.RData`, `.Rhistory`, `classwebtest.Rproj`, and `index.html` into the new directory
+10. Edit and build site at will, commit and push to GitHub, and you're at it! 
 
 # Additional Needs
 
