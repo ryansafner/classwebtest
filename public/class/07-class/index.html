@@ -24,7 +24,7 @@
     <meta property="og:image" content="https://classtest.ryansafner.com/images/econ_meta.png">
     <meta property="og:description" content="Understand and use economic reasoning to evaluate public policy" />
 
-    <meta name="generator" content="Hugo 0.54.0" />    
+    <meta name="generator" content="Hugo 0.56.1" />    
 
     <title>Class 7: Linear Regression | ECON 480: Econometrics</title>
     <link rel="canonical" href="https://classtest.ryansafner.com/class/07-class/">
@@ -134,9 +134,9 @@
     
 <!-- BLOGDOWN-HEAD -->
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -146,14 +146,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -165,7 +167,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-le
 div.sourceCode
   { color: #1f1c1b; background-color: #ffffff; }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span. { color: #1f1c1b; } /* Normal */
 code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
@@ -288,35 +290,35 @@ r_{X,Y}&amp;=\frac{1}{n}\frac{\displaystyle\sum^n_{i=1}(X_i-\bar{X})(Y_i-\bar{Y}
 <h2 id="calculating-correlation-example">Calculating Correlation Example</h2>
 <p>We can calculate the correlation of a simple data set (of 4 observations) using <code>R</code> to show how correlation is calculated. We will use the <span class="math inline">\(Z\)</span>-score method. Begin with a simple set of data in <span class="math inline">\((X_i, Y_i)\)</span> points:</p>
 <p><span class="math display">\[ (1,1), (2,2), (3,4), (4,9) \]</span></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
-
-corr.example&lt;-<span class="kw">data.frame</span>(<span class="dt">x=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>),
-                         <span class="dt">y=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">9</span>))
-<span class="kw">ggplot</span>(corr.example,<span class="kw">aes</span>(<span class="dt">x=</span>x,<span class="dt">y=</span>y))<span class="op">+</span><span class="kw">geom_point</span>()</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>corr.example&lt;-<span class="kw">data.frame</span>(<span class="dt">x=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>),</span>
+<span id="cb1-4"><a href="#cb1-4"></a>                         <span class="dt">y=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">9</span>))</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="kw">ggplot</span>(corr.example,<span class="kw">aes</span>(<span class="dt">x=</span>x,<span class="dt">y=</span>y))<span class="op">+</span><span class="kw">geom_point</span>()</span></code></pre></div>
 <p><img src="/class/07-class_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(corr.example<span class="op">$</span>x) <span class="co">#find mean of x</span></code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">mean</span>(corr.example<span class="op">$</span>x) <span class="co">#find mean of x</span></span></code></pre></div>
 <pre><code>## [1] 2.5</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(corr.example<span class="op">$</span>y) <span class="co">#find mean of y</span></code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">mean</span>(corr.example<span class="op">$</span>y) <span class="co">#find mean of y</span></span></code></pre></div>
 <pre><code>## [1] 4</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sd</span>(corr.example<span class="op">$</span>x) <span class="co">#find sd of x</span></code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">sd</span>(corr.example<span class="op">$</span>x) <span class="co">#find sd of x</span></span></code></pre></div>
 <pre><code>## [1] 1.290994</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sd</span>(corr.example<span class="op">$</span>y) <span class="co">#find sd of y</span></code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">sd</span>(corr.example<span class="op">$</span>y) <span class="co">#find sd of y</span></span></code></pre></div>
 <pre><code>## [1] 3.559026</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co">#take z score of x,y for each pair and multiply them</span>
-corr.example<span class="op">$</span>z.product&lt;-(((corr.example<span class="op">$</span>x<span class="fl">-2.5</span>)<span class="op">/</span><span class="fl">1.291</span>)<span class="op">*</span>
-<span class="st">                           </span>((corr.example<span class="op">$</span>y<span class="dv">-4</span>)<span class="op">/</span><span class="fl">3.559</span>))
-
-corr.example </code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">#take z score of x,y for each pair and multiply them</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>corr.example<span class="op">$</span>z.product&lt;-(((corr.example<span class="op">$</span>x<span class="fl">-2.5</span>)<span class="op">/</span><span class="fl">1.291</span>)<span class="op">*</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="st">                           </span>((corr.example<span class="op">$</span>y<span class="dv">-4</span>)<span class="op">/</span><span class="fl">3.559</span>))</span>
+<span id="cb10-4"><a href="#cb10-4"></a></span>
+<span id="cb10-5"><a href="#cb10-5"></a>corr.example </span></code></pre></div>
 <pre><code>##   x y z.product
 ## 1 1 1 0.9793959
 ## 2 2 2 0.2176435
 ## 3 3 4 0.0000000
 ## 4 4 9 1.6323265</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r">(<span class="kw">sum</span>(corr.example<span class="op">$</span>z.product)<span class="op">/</span><span class="dv">3</span>) <span class="co">#average z products over n-1</span></code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>(<span class="kw">sum</span>(corr.example<span class="op">$</span>z.product)<span class="op">/</span><span class="dv">3</span>) <span class="co">#average z products over n-1</span></span></code></pre></div>
 <pre><code>## [1] 0.943122</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor</span>(corr.example<span class="op">$</span>x, corr.example<span class="op">$</span>y) <span class="co">#compare our answer to cor() command</span></code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">cor</span>(corr.example<span class="op">$</span>x, corr.example<span class="op">$</span>y) <span class="co">#compare our answer to cor() command</span></span></code></pre></div>
 <pre><code>## [1] 0.9431191</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cov</span>(corr.example<span class="op">$</span>x, corr.example<span class="op">$</span>y) <span class="co">#just for kicks - covariance </span></code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="kw">cov</span>(corr.example<span class="op">$</span>x, corr.example<span class="op">$</span>y) <span class="co">#just for kicks - covariance </span></span></code></pre></div>
 <pre><code>## [1] 4.333333</code></pre>
 
 

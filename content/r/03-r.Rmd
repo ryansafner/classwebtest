@@ -39,7 +39,7 @@ Find the mean of x with `mean()`
 
 Now take the following pdf of random variable $Y$:
 
-```{r, echo=FALSE, results="asis"}
+```{r, echo=FALSE, warning = F, message = F, results="asis"}
 library("tidyverse")
 tribble(
   ~y, ~`p(y)`,
