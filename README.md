@@ -22,10 +22,12 @@ You will need a git client, GitHub account, and link your GitHub account to `R S
 
 # Additional Needs
 
+This structure and theme seems to have a lot of additional bells and whistles beyond a typical Hugo site. Mainly, it seems to be `pandoc` templates for sidenotes (a la Tufte) and citations. This part may require you to go down the rabbit hole and hack your computer just a little bit. 
+
 - Ensure you have the latest version of [pandoc installed](https://pandoc.org/installing.html)
-- Install [Pandoc sidenote](https://github.com/jez/pandoc-sidenote) (for converting footnotes to sidenotes, a la Tufte). This might require you to go down the rabbit hole a bit: 
-    - I use a Mac, so I use `brew install jez/formulae/pandoc-sidenote`
-        - Why, by the way, you should have [homebrew](https://docs.brew.sh/Installation) installed, which requires command line tools in XCode (download XCode on the Mac App Store, and then install with `xcode-select --install` in a terminal)
+- Install [Pandoc sidenote](https://github.com/jez/pandoc-sidenote) (for converting footnotes to sidenotes).
+    - I use a Mac, so I use `brew install jez/formulae/pandoc-sidenote` in a terminal
+        - By the way, for Macs, you should have [homebrew](https://docs.brew.sh/Installation) installed, which requires command line tools in XCode (download XCode on the Mac App Store, and then install with `xcode-select --install` in a terminal)
 
 # Major Moving Parts
 
@@ -52,21 +54,22 @@ You will need a git client, GitHub account, and link your GitHub account to `R S
 
 # Adding Sections to Schedule
 
-1. Adding a new column (assignment type) to the table schedule page, such as **thing**, go to `schedule.html` in (`themes/ath-tufte-hugo_18-19/layouts/shortcodes/) and add the following code (examplified with **thing**)
+1. Adding a new column (course item, such as "Homework" or "Class Notes" or "Slides") to the table schedule page, go to `schedule.html` in (`themes/ath-tufte-hugo_18-19/layouts/shortcodes/)` and add the following code (Substitute your actual name for my placeholder, `THING`, below)
+        - Note if you'd like to use a different [font awesome icon](https://fontawesome.com/icons?d=gallery) (currently, `fas fa-university` is used, copy/paste the html code wherever you see `<i class="fas fa-university fa-lg"></i>`)
+        - Essentially, the code below says "if there is a created `THING` page in the `/THING` folder for this class meeting, use `ICON`, otherwise, use `ICON` in the lighter color `f1f1f1`" .. the creation of `THING`s in the `/THING` folder is what Step 2 below is about. 
 
 ```
-            {{- if .thing }}
-            <td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/thing/{{ .thing }}/">
-                <i class="fas fa-university fa-lg"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
-                <i class="fas fa-university fa-lg"></i></font></td>
-            {{- end }}
-
+{{- if .THING }}
+<td align="center" style="width:10%;text-align:center"><a href="{{ .Site.baseurl }}/THING/{{ .THING }}/">
+    <i class="fas fa-university fa-lg"></i></a></td>
+{{- else }}
+<td align="center" style="width:10%;text-align:center"><font color="f1f1f1">
+    <i class="fas fa-university fa-lg"></i></font></td>
+{{- end }}
 ```
 
-2. On `lessons.yaml`, add each individual element for each class as needed, e.g. `thing: "01-thing"`
-3. Place individual `01-thing.Rmd` files into a `thing` folder under `content` to be linked to
+2. On `lessons.yaml`, add each individual element for each class as needed, e.g. `THING: "01-THING"`
+3. Place individual `01-THING.Rmd` files into a `THING` folder under `content` to be linked to
     - The one exception is for Xaringan slides, which need to go under `static` to render properly, see below 
 
 # Hosting Xaringan Slides and Adding to Schedule Page
