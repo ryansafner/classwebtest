@@ -2,13 +2,161 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Econometrics</title>
-    <link>https://classtest.ryansafner.com/index.html</link>
+    <link>https://classtest.ryansafner.com/</link>
     <description>Recent content on Econometrics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://classtest.ryansafner.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Capitalism I</title>
+      <link>https://classtest.ryansafner.com/reading/01-reading/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/reading/01-reading/</guid>
+      <description>Required   Chapter 1 in Naked EconomicsCharles Wheelan, Naked Economics: Undressing the Dismal Science, 2nd ed. (New York: W. W. Norton &amp;amp; Company, 2010).
+  Introduction and 1.1–1.5 in Economy, Society, and Public PolicyThe CORE Team, Economy, Society, and Public Policy, 2019, https://www.core-econ.org/espp/.
+  Larry Elliott, “Heretics welcome! Economics needs a new Reformation”  “Dismal ignorance of the “dismal science”—a response to Larry Elliot&#34;  Tom Nichols, “How We Killed Expertise (And why we need it back.</description>
+    </item>
+    
+    <item>
+      <title>R Practice 1</title>
+      <link>https://classtest.ryansafner.com/r/03-r/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/r/03-r/</guid>
+      <description>Contents  Getting Set Up Creating Objects Playing with a Data Set Execute your R Script     Download .Rmd  Answer Key  For this homework, you may type up or handwrite the answers to each question. When you get to the R questions at the end, please attach a copy of your .R file (with comments!) of commands for each relevant question. For future homeworks, I will demonstrate how you can complete everything using R Markdown, but you will not be obligated to do so.</description>
+    </item>
+    
+    <item>
+      <title>Preliminary Survey on Statistics and Software</title>
+      <link>https://classtest.ryansafner.com/assignment/00-preliminary-survey/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/assignment/00-preliminary-survey/</guid>
+      <description>This is an ungraded and anonymous survey for me to evaluate the distribution of your math and statistics backgrounds. You do not need to write your name on it. Please complete all problems to the best of your ability. Your responses will help me craft the course to see which material we need to focus on at greater length, especially review material.
+1 Using the following sample data:
+\[8, 12, 9, 10, 11, 5, 15\]</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 1</title>
+      <link>https://classtest.ryansafner.com/assignment/01-problem-set/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/assignment/01-problem-set/</guid>
+      <description>Download .Rmd  Answer Key  For this homework, you may type up or handwrite the answers to each question. When you get to the R questions at the end, please attach a copy of your .R file (with comments!) of commands for each relevant question. For future homeworks, I will demonstrate how you can complete everything using R Markdown, but you will not be obligated to do so.</description>
+    </item>
+    
+    <item>
+      <title>A Plain Markdown Post</title>
+      <link>https://classtest.ryansafner.com/2016/12/30/a-plain-markdown-post/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/2016/12/30/a-plain-markdown-post/</guid>
+      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+ You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://classtest.ryansafner.com/about/</link>
+      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/about/</guid>
+      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://classtest.ryansafner.com/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/2015/07/23/hello-r-markdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>https://classtest.ryansafner.com/2015/01/01/lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/2015/01/01/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Assignments</title>
+      <link>https://classtest.ryansafner.com/assignments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/assignments/</guid>
+      <description>Preparation You will get the most out of this class if you (1) attend class, (2) complete all the readings, and (3) engageTake detailed notes, watch the videos and supplementary content, work through the examples given in the textbook, have vivid dreams about them, etc.
+ with the readings.Also (4) ask for help from me or the TAs!
+
+To encourage attendance and preparation, I’m borrowing and adapting Dr. Thompson’s system from his OB class that you just finished: regular self-reporting backed by the honor system.</description>
+    </item>
+    
+    <item>
+      <title>Class 10: Inferential Statistics</title>
+      <link>https://classtest.ryansafner.com/class/10-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/class/10-class/</guid>
+      <description>code.sourceCode  span { display: inline-block; line-height: 1.25; } code.sourceCode  span { color: inherit; text-decoration: inherit; } code.sourceCode  span:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } code.sourceCode  span { text-indent: -5em; padding-left: 5em; } } pre.</description>
+    </item>
+    
+    <item>
+      <title>Class 1: Introduction to Econometrics</title>
+      <link>https://classtest.ryansafner.com/class/01-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/class/01-class/</guid>
+      <description>Contents  The Summation Operator Definition Useful Properties of Summation Operators Advanced: Useful Properties for Regression    The Summation Operator Definition Many elementary propositions in econometrics (and statistics) involve the use of the sums of numbers. Mathematicians often use the summation operator (the greek letter \(\Sigma\) –“sigma”) as a shorthand, rather than writing everything out the long way. It will be worth your time to understand the summation operator, and some of its properties, and how these can provide shortcuts to proving more advanced theorems in econometrics.</description>
+    </item>
+    
+    <item>
+      <title>Class 7: Linear Regression</title>
+      <link>https://classtest.ryansafner.com/class/07-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/class/07-class/</guid>
+      <description>code.sourceCode  span { display: inline-block; line-height: 1.25; } code.sourceCode  span { color: inherit; text-decoration: inherit; } code.sourceCode  span:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } code.sourceCode  span { text-indent: -5em; padding-left: 5em; } } pre.</description>
+    </item>
+    
+    <item>
+      <title>Reference</title>
+      <link>https://classtest.ryansafner.com/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/reference/</guid>
+      <description>code.sourceCode  span { display: inline-block; line-height: 1.25; } code.sourceCode  span { color: inherit; text-decoration: inherit; } code.sourceCode  span:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } code.sourceCode  span { text-indent: -5em; padding-left: 5em; } } pre.</description>
+    </item>
+    
+    <item>
+      <title>Schedule</title>
+      <link>https://classtest.ryansafner.com/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/schedule/</guid>
+      <description>Here’s your roadmap for the semester!
+  Readings include textbook chapters and occasional journal articles  Assignments are due by the beginning of class unless otherwise stated  Class materials contain extra explanations, math/statistical properties &amp;amp; proofs, and other helpful resourcesThese “online appendices” keep the slides nice and de-cluttered!
+  Slides are “Xaringan” presentations in html that can be opened in any browserFile &amp;gt; Print &amp;gt; Save as PDF if you wish to download them</description>
+    </item>
+    
+    <item>
+      <title>Syllabus</title>
+      <link>https://classtest.ryansafner.com/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://classtest.ryansafner.com/syllabus/</guid>
+      <description>code.sourceCode  span { display: inline-block; line-height: 1.25; } code.sourceCode  span { color: inherit; text-decoration: inherit; } code.sourceCode  span:empty { height: 1.2em; } .sourceCode { overflow: visible; } code.sourceCode { white-space: pre; position: relative; } div.sourceCode { margin: 1em 0; } pre.sourceCode { margin: 0; } @media screen { div.sourceCode { overflow: auto; } } @media print { code.sourceCode { white-space: pre-wrap; } code.sourceCode  span { text-indent: -5em; padding-left: 5em; } } pre.</description>
+    </item>
     
   </channel>
 </rss>
